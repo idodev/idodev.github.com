@@ -2,9 +2,15 @@
 <html lang="en" class="{{page.page-class}}">
 <head>
 	<meta charset="UTF-8">
-	<title>{{ page.title }} &ndash; idodev.co.uk &ndash; The personal dev blog of Toby Foord</title>
+	<title>{{ page.title }} &ndash; idodev.co.uk &ndash; Dev blog of Toby Foord</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-	{{ content }}
+	<header>
+		<a href="http://idodev.github.com" class="logo"><img src="" alt="I Do Dev - Toby Foords Personal Blog" /></a>
+	</header>
+	<div class="wrapper">
+		{{ content }}
+	</div>
 </body>
 </html>
