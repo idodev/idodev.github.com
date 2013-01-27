@@ -3,7 +3,7 @@ $brand_color:#00B060;
 $accent_color:#FF4500;
 $text_color:#444;
 
-$base_font_size:14px;
+$base_font_size:16px;
 $base_spacing:1.6;
 $half_spacing:$base_spacing/2;
 $base_spacing_px:$base_spacing * $base_font_size;
@@ -26,6 +26,8 @@ html, body{
 }
 body{
 	font-size:$base_font_size;
+	background-color:$back_color;
+	color:$text_color;
 }
 
 p{
@@ -51,7 +53,7 @@ a{
 	width:$content_width_desktop;
 	margin:auto;
 }
-.g{
+.column{
 	float:left;
 	padding-left:$base_spacing_px;
 }
