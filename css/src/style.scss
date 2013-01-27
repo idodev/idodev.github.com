@@ -40,7 +40,7 @@ p{
 a{
 	color:$brand_color;
 	text-decoration:none;
-	font-weight:500;
+	font-weight:400;
 	&:hover{
 		text-decoration: underline;
 	}
@@ -99,8 +99,11 @@ a.logo{
 		float:left;
 		padding-left:$base_spacing_px;
 		a{
-			line-height:64px;
-			vertical-align: bottom;
+			line-height:128px;
+			color:#444;
+			&:hover{
+				color:$brand_color;
+			}
 		}
 	}
 }
