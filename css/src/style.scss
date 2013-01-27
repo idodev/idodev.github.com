@@ -7,6 +7,7 @@ $base_font_size:16px;
 $base_spacing:1.6;
 $half_spacing:$base_spacing/2;
 $base_spacing_px:$base_spacing * $base_font_size;
+$half_spacing_px: $half_spacing * $base_font_size; 
 
 /*content widths*/
 $content_width_desktop:960px;
@@ -27,6 +28,7 @@ html, body{
 	font-weight:300;
 }
 body{
+	padding:$base_spacing_px $half_spacing_px;
 	font-size:$base_font_size;
 	background-color:$back_color;
 	color:$text_color;
@@ -100,9 +102,10 @@ a.logo{
 		padding-left:$base_spacing_px;
 		a{
 			line-height:128px;
-			color:#444;
+			color:#555;
 			&:hover{
 				color:$brand_color;
+				text-decoration: none;
 			}
 		}
 	}
