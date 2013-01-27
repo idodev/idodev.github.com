@@ -34,6 +34,11 @@ body{
 	color:$text_color;
 }
 
+h1{
+	color:$accent_color;
+	font-size:2.4em;
+}
+
 p{
 	padding-bottom:$base_spacing*$base_font_size;
 	line-height:$base_spacing;
