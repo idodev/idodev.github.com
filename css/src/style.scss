@@ -38,8 +38,7 @@ a{
 	text-decoration:none;
 	font-weight:500;
 	&:hover{
-		background-color:$brand_color;
-		color:#FFF;
+		text-decoration: underline;
 	}
 }
 
