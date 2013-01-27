@@ -33,6 +33,19 @@ p{
 	line-height:$base_spacing;
 }
 
+a{
+	color:$brand_color;
+	&:hover{
+		background-color:$brand_color;
+		color:#FFF;
+	}
+}
+
+::selection {
+	background-color:$brand_color;
+	color:#FFF;
+}
+
 .wrapper{
 	width:$content_width_desktop;
 	margin:auto;
