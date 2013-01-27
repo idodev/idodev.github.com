@@ -80,11 +80,26 @@ a{
 
 /*Site Logo*/
 a.logo{
+	float:left;
 	h1{
 		img{
 			display:block;
 			width:128px;
 			height:128px;
+		}
+	}
+}
+
+.site-nav{
+	display:inline-block;
+	list-style:none;
+	li{
+		display:block;
+		float:left;
+		padding-left:$base_spacing_px;
+		a{
+			line-height:64px;
+			vertical-align: bottom;
 		}
 	}
 }
