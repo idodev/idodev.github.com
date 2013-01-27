@@ -13,7 +13,9 @@ $content_width_desktop:960px;
 $content_width_tablet:720px;
 $content_width_mobile:480px;
 
-
+div,header,footer{
+	overflow:hidden;
+}
 
 html, body{
 	width:100%;
