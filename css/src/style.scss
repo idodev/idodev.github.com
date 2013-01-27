@@ -4,7 +4,7 @@ $accent_color:#FF4500;
 $text_color:#444;
 
 $base_font_size:16px;
-$base_spacing:1.6;
+$base_spacing:1.5;
 $half_spacing:$base_spacing/2;
 $base_spacing_px:$base_spacing * $base_font_size;
 $half_spacing_px: $half_spacing * $base_font_size; 
@@ -37,7 +37,7 @@ body{
 
 h1{
 	color:$accent_color;
-	font-size:2.4em;
+	font-size:2em;
 }
 
 p{
