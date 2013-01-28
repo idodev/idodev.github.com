@@ -1,14 +1,8 @@
 ---
-layout: default
+layout: post
 date: 2013-01-27 18:58:00
 slug: a-tinymce-revelation
-title: A TinyMCE revelation...
-categories:
--Web Development
-tags:
--Javascript
--UI
--TinyMCE
+title: A TinyMCE revelation
 ---
 
 Background
@@ -25,5 +19,12 @@ The Revelation
 I have already commended the excelent documentation available with this library of tools, but the problem really is just how much documentation there is. I could hunt for the solution to this problem for days before unearthing a fix. There are just so many plugins and extentions of the platform that it makes my head spin.
 Yesterday I stumbled over three lines of code, well three options for a TinyMCE instance, and my heart nigh on skipped a beat.
 
+```Javascript
+{
+	force_br_newlines : true,
+	force_p_newlines : false,
+	forced_root_block : ''
+}
+```
 
 Thats it! With that, there is no enclosing element, and any line feeds requested will be interpreted as &lt;br/&gt;. To be used with caution of course!
