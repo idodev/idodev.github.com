@@ -19,12 +19,10 @@ The Revelation
 I have already commended the excelent documentation available with this library of tools, but the problem really is just how much documentation there is. I could hunt for the solution to this problem for days before unearthing a fix. There are just so many plugins and extentions of the platform that it makes my head spin.
 Yesterday I stumbled over three lines of code, well three options for a TinyMCE instance, and my heart nigh on skipped a beat.
 
-```Javascript
-{
+
 	force_br_newlines : true,
 	force_p_newlines : false,
 	forced_root_block : ''
-}
-```
+
 
 Thats it! With that, there is no enclosing element, and any line feeds requested will be interpreted as &lt;br/&gt;. To be used with caution of course!

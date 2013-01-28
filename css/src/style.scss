@@ -3,6 +3,7 @@ $brand_color:#00B060;
 $accent_color:#FF4500;
 $text_color:#444;
 
+$default_radius:5px;
 $base_font_size:16px;
 $base_spacing:1.5;
 $half_spacing:$base_spacing/2;
@@ -37,8 +38,14 @@ h1{
 	font-size:2em;
 }
 
+h2{
+	color:#333;
+	font-size:1.5em;
+	font-weight:400;
+}
+
 p{
-	padding-bottom:$base_spacing*$base_font_size;
+	padding-bottom:$base_spacing_px;
 }
 
 a{
@@ -48,6 +55,16 @@ a{
 	&:hover{
 		text-decoration: underline;
 	}
+}
+
+pre{
+	color:#FFF;
+	background-color:#222;
+	padding:$half_spacing_px $base_spacing_px;
+	border-radius: $default_radius;
+	margin-bottom: $base_spacing_px;
+	font-family: Courier;
+	overflow-y: auto;
 }
 
 ::selection {
