@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 date: 2013-01-27 18:58:00
 slug: a-tinymce-revelation
 title: A TinyMCE revelation...
