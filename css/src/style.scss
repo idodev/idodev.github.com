@@ -5,7 +5,7 @@ $text_color:#444;
 
 $default_radius:5px;
 $base_font_size:16px;
-$base_spacing:1.5;
+$base_spacing:1.6;
 $half_spacing:$base_spacing/2;
 $base_spacing_px:$base_spacing * $base_font_size;
 $half_spacing_px: $half_spacing * $base_font_size; 
@@ -39,7 +39,7 @@ h1{
 }
 
 h2{
-	color:#333;
+	color:$brand_color;
 	font-size:1.5em;
 	font-weight:400;
 }
@@ -60,6 +60,7 @@ a{
 pre{
 	color:#FFF;
 	background-color:#222;
+	font-weight:300;
 	padding:$half_spacing_px $base_spacing_px;
 	border-radius: $default_radius;
 	margin-bottom: $base_spacing_px;
@@ -133,3 +134,23 @@ a.logo{
 .page-about .site-nav li a.site-nav-about,
 .page-projects .site-nav li a.site-nav-projects
 {color:$brand_color;}
+
+.block-list{
+	border-top:1px solid #F6F6F6;
+	border-bottom:1px solid #EEE;
+	li{
+		border-top:1px solid #EEE;
+		border-bottom:1px solid #FFF;
+		padding-top:1.25 * $base_font_size - 1px;
+		padding-bottom:1.25 * $base_font_size - 1px;
+		h2{
+			font-size:2em;
+			line-height:1em;
+			a:hover{
+				text-decoration: none;
+				background-color: $brand_color;
+				color:#FFF;
+			}
+		}
+	}
+}
