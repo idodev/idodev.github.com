@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2013-01-27 18:58:00
 slug: a-tinymce-revelation
@@ -8,6 +9,7 @@ tags:
 -Javascript
 -UI
 -TinyMCE
+---
 
 Background
 ---
