@@ -1,4 +1,5 @@
-$back_color:#F5FEF5;
+$back_color:#F5F5F5;
+$foot_color:#222;
 $brand_color:#00B060;
 $accent_color:#FF4500;
 $text_color:#444;
@@ -11,11 +12,11 @@ $base_spacing_px:$base_spacing * $base_font_size;
 $half_spacing_px: $half_spacing * $base_font_size; 
 
 /*content widths*/
-$content_width_desktop:960px;
-$content_width_tablet:720px;
+$content_width_desktop:1100px;
+$content_width_tablet:960px;
 $content_width_mobile:480px;
 
-div,header,footer{
+div, header, footer, .wrapper{
 	overflow:hidden;
 }
 
@@ -26,21 +27,40 @@ html{
 }
 body{
 	margin:0;
-	padding:$base_spacing_px $half_spacing_px;
 	font-size:$base_font_size;
-	background-color:$back_color;
+	background-color:$foot_color;
 	color:$text_color;
-	line-height:$base_spacing;
+	line-height:$base_spacing_px;
+}
+header.page-header{
+	background-color: #FFF;
+	padding:$base_spacing_px 0;
 }
 
+.page-content{
+	background:$back_color;
+	min-height:400px;
+}
+footer.page-footer{
+	color:#FFF;
+	padding:$half_spacing_px 0;
+	margin-top:$base_spacing_px;
+	margin-right:-$half_spacing_px;
+	margin-bottom:-$base_spacing_px;
+	margin-left:-$half_spacing_px;
+	font-size:0.8em;
+}
 h1{
 	color:$brand_color;
 	font-size:2em;
+	line-height:2em;
+	vertical-align: text-top;
 }
 
 h2{
 	color:$brand_color;
 	font-size:1.5em;
+	line-height:2em;
 	font-weight:400;
 }
 
@@ -102,14 +122,24 @@ pre{
 .push-eight-tenths{left:80%;}
 .push-nine-tenths{left:90%;}
 
+.sink-one-line{top:$base_spacing_px;}
+
+
+footer a{
+	color:#FFF;
+	text-decoration: underline;
+	font-weight:300;
+}
+
 /*Site Logo*/
 a.logo{
 	float:left;
 	h1{
 		img{
 			display:block;
-			width:128px;
-			height:128px;
+			width:220px;
+			height:48px;
+			background:transparent url("/logo.png") 0 0 no-repeat;
 		}
 	}
 }
@@ -119,9 +149,14 @@ a.logo{
 	li{
 		display:block;
 		float:left;
-		padding-left:$base_spacing_px;
+		padding-right:$base_spacing_px;
+		border-bottom:2px solid #555;
+		margin-bottom:-2px;
+		&:hover{
+			border-bottom-color: $brand_color;
+		}
 		a{
-			line-height:128px;
+			line-height:2*$base_spacing_px;
 			color:#555;
 			&:hover{
 				color:$brand_color;
@@ -136,13 +171,15 @@ a.logo{
 {color:$brand_color;}
 
 .block-list{
-	border-top:1px solid #F6F6F6;
 	border-bottom:1px solid #EEE;
 	li{
 		border-top:1px solid #EEE;
 		border-bottom:1px solid #FFF;
 		padding-top:1.25 * $base_font_size - 1px;
 		padding-bottom:1.25 * $base_font_size - 1px;
+		&:first-child{
+			border-top:none;
+		}
 		h2{
 			font-size:2em;
 			line-height:1em;
@@ -153,4 +190,30 @@ a.logo{
 			}
 		}
 	}
+}
+
+
+.block-list{
+	border-bottom:1px solid #FFF;
+}
+.block-list li{
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #DDD;
+	padding:$half_spacing_px 0;
+}
+.block-list li h2{
+	font-size:1.8em;
+}
+.block-list li h2 a{
+	font-weight:300;
+}
+.block-list li h2 a:hover{
+	text-decoration: none;
+	background-color:$brand-color;
+	color:#FFF;
+}
+
+.post-time{
+	font-size:1em;
+	color:#555;
 }

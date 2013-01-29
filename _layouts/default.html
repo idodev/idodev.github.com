@@ -9,31 +9,37 @@
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css' />
 </head>
 <body>
-	<header>
+	<header class="page-header">
 		<div class="wrapper">
-			<div class="column one-whole">
+			<div class="column six-tenths">
 				<a href="http://idodev.github.com" class="logo">
 					<h1>
 						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="I Do Dev - Toby Foords Personal Blog" />
 					</h1>
 				</a>
-
+			</div>
+			<div class="column three-tenths push-one-tenth">
 				<ul class="site-nav">
 					<li><a href="/" class="site-nav-home">Home</a></li>
 					<li><a href="#" class="site-nav-about">About</a></li>
 					<li><a href="#" class="site-nav-projects">Projects</a></li>
 				</ul>
-			</a>
+			</div>
 		</div>
 	</header>
-	<div class="wrapper">
+	<div class="wrapper page-content">
 		<div class="column six-tenths">
 		{{ content }}
 		</div>
 
-		<div class="column three-tenths push-one-tenth">
+		<div class="column three-tenths push-one-tenth sink-one-line">
 			<p>Hi, I'm Toby. A <a href="http://github.com/idodev">developer</a>, a wannabe <a href="www.foorddesign.co.uk">designer</a>, a husband, and a dad. I ocassionally <a href="http://github.com/idodev">commit</a>, once in a while I <a href="http://twitter.com/tobyfoord">tweet</a>, and on a blue moon I might <a href="#">chat</a>.</p>
 		</div>
 	</div>
+	<footer class="page-footer">
+		<div class="wrapper">
+			<p>&copy; 2013 Toby Foord. This site is hosted on github using <a href="https://github.com/mojombo/jekyll/">Jekyll</a>. Feel free to <a href="http://github.com/idodev/idodev.github.com">view the source here</a>.</p>
+		</div>
+	</footer>
 </body>
 </html>
