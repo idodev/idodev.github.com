@@ -107,6 +107,7 @@ pre{
 	margin-left:-$base_spacing_px;
 }
 .column{
+	position:relative;
 	float:left;
 	padding-left:$base_spacing_px;
 	width:100%;
