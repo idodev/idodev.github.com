@@ -38,7 +38,7 @@ header.page-header{
 }
 
 .page-content{
-	padding-top:$base_spacing_px;
+	padding: 0 $base_spacing_px;
 	background:$back_color;
 	min-height:400px;
 }
@@ -98,6 +98,10 @@ pre{
 	width:$content_width_desktop;
 	max-width:90%;
 	margin:auto;
+	padding: 0 $half_spacing_px;
+}
+.column-wrapper{
+	margin-left:-$base_spacing_px;
 }
 .column{
 	float:left;
@@ -181,6 +185,8 @@ a.logo{
 		border-bottom:1px solid #FFF;
 		padding-top:1.25 * $base_font_size - 1px;
 		padding-bottom:1.25 * $base_font_size - 1px;
+		padding-left:$half_spacing_px;
+		padding-right:$half_spacing_px;
 		&:first-child{
 			border-top:none;
 		}
