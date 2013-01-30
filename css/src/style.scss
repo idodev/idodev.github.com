@@ -51,6 +51,11 @@ footer.page-footer{
 	margin-left:-$half_spacing_px;
 	font-size:0.8em;
 }
+
+article{
+	padding:$base_spacing_px;
+}
+
 h1{
 	color:$brand_color;
 	font-size:2em;
@@ -95,6 +100,7 @@ pre{
 }
 
 .wrapper{
+	box-sizing:border-box;
 	width:$content_width_desktop;
 	max-width:90%;
 	margin:auto;
