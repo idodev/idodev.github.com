@@ -51,7 +51,7 @@ footer.page-footer{
 }
 
 article{
-	padding:$base_spacing_px $half_spacing_px;
+	padding:$base_spacing_px 0;
 }
 
 h1{
@@ -101,7 +101,7 @@ pre{
 	width:$content_width_desktop;
 	max-width:90%;
 	margin:auto;
-	padding: 0 $half_spacing_px;
+	padding: 0 $base_spacing_px;
 }
 .column-wrapper{
 	margin-left:-$base_spacing_px;
