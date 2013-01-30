@@ -39,7 +39,7 @@ header.page-header{
 }
 
 .page-content{
-	padding: 0 $base_spacing_px;
+	padding: $base_spacing_px $base_spacing_px;
 	background:$back_color;
 	min-height:400px;
 }
@@ -50,9 +50,6 @@ footer.page-footer{
 	font-size:0.8em;
 }
 
-article{
-	padding:$base_spacing_px 0;
-}
 
 h1{
 	color:$brand_color;
