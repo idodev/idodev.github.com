@@ -16,8 +16,9 @@ $content_width_desktop:1100px;
 $content_width_tablet:680px;
 $content_width_mobile:480px;
 
-div, header, footer, .wrapper{
+div, header, footer, .wrapper, .column-wrapper, .column{
 	overflow:hidden;
+	box-sizing:border-box;
 }
 
 html{
@@ -45,10 +46,7 @@ header.page-header{
 footer.page-footer{
 	color:#FFF;
 	padding:$half_spacing_px 0;
-	margin-top:$base_spacing_px;
-	margin-right:-$half_spacing_px;
-	margin-bottom:-$base_spacing_px;
-	margin-left:-$half_spacing_px;
+	margin-top:$half_spacing_px;
 	font-size:0.8em;
 }
 
@@ -100,7 +98,6 @@ pre{
 }
 
 .wrapper{
-	box-sizing:border-box;
 	width:$content_width_desktop;
 	max-width:90%;
 	margin:auto;
@@ -110,7 +107,6 @@ pre{
 	margin-left:-$base_spacing_px;
 }
 .column{
-	box-sizing:border-box;
 	float:left;
 	padding-left:$base_spacing_px;
 	width:100%;
