@@ -98,7 +98,8 @@ pre{
 	width:$content_width_desktop;
 	max-width:90%;
 	margin:auto;
-	padding: 0 $base_spacing_px;
+	padding-left:$base_spacing_px;
+	padding-right:$base_spacing_px;
 }
 .column-wrapper{
 	margin-left:-$base_spacing_px;
