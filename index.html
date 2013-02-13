@@ -11,8 +11,9 @@ page-class: page-home
             <span class="post-time">{{ post.date | date: "%d %B, %Y" }}</span>
             <h2 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <p>
-            	{{ post.content | strip_html | truncatewords:75}}
-            	... <a href="{{ post.url }}">Read more&raquo;</a>
+            	{{ post.content | split :'</p>' | first | strip_html | truncatewords:60}}
+            	<br />
+            	<a href="{{ post.url }}">Read more&raquo;</a>
             </p>
         </li>
         {% endfor %}

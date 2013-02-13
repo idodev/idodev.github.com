@@ -94,6 +94,13 @@ ol{
 	padding-bottom: $base_spacing_px;
 }
 
+strong{
+	font-weight:500;
+}
+em{
+	font-style: italic;
+}
+
 ::selection {
 	background-color:$brand_color;
 	color:#FFF;
@@ -203,11 +210,14 @@ a.logo{
 				}
 			}
 		}
+		p{
+			padding-bottom:0;
+		}
 	}
 }
 .post-time{
 	font-size:1em;
-	color:#555;
+	color:#777;
 }	
 
 .img-centered{
