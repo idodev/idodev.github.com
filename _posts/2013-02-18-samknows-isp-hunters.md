@@ -1,0 +1,17 @@
+---
+layout: post
+date: 2013-02-18
+slug: samknows-isp-hunters
+title: SamKnows, ISP Hunters
+author: Toby Foord
+---
+
+I just recieved an email confirming my enrolement to the SamKnows Broadband Performance Measurement Study! I think I applied for this over a year ago but still. Woop!
+
+##Did YouKnow
+Over the last couple of years a big project has been underway to collect *the* big picture of Broaband speeds across the EU.
+[SamKnows](http://www.samknows.com) have been heading the project, asking for 10,000 volunteers to come forth and request to be part of their research.
+
+On being accepted to take part of this project you are provided with a piece of hardware called **The Whitebox** which plugs in to your router. Then its just a case of pointing all of my devices to use its wireless access point and we're good to go. This hardware monitors all transactions for their speed, latency, network quality etc...
+
+The great part is that this data is presented to you in easy to read but *really* informative charts both through their website and via mail once a month. Besides that your becoming part of a movement to put some real pressure on our ISPs, this information is aggregated and passed to ofcom with the intention of highlighting the unrealistic promises the ISPs make and finally

@@ -10,6 +10,10 @@ page-class: page-home
         <li>
             <span class="post-time">{{ post.date | date: "%d %B, %Y" }}</span>
             <h2 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>
+            	{{ post.content | strip_html | truncatewords:75}}
+            	... <a href="{{ post.url }}">Read more&raquo;</a>
+            </p>
         </li>
         {% endfor %}
     </ul>

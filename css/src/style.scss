@@ -88,6 +88,12 @@ pre{
 	overflow-y: auto;
 }
 
+ol{
+	list-style:decimal outside;
+	padding-left:$base_spacing_px;
+	padding-bottom: $base_spacing_px;
+}
+
 ::selection {
 	background-color:$brand_color;
 	color:#FFF;
