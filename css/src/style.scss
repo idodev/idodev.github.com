@@ -224,8 +224,11 @@ a.logo{
 	position: relative;
 	float:right;
 	background: $brand_color;
-	padding:0 12px;
+	padding:0 10px;
+	line-height:1.6em;
+	font-size:0.8em;
 	&:after{
+		content: ' ';
 		position: absolute;
 		right:4px;
 		bottom:-12px;
@@ -235,6 +238,7 @@ a.logo{
 	}
 	a{
 		color:#FFF;
+		font-weight: 100;
 	}
 }
 
