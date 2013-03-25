@@ -223,7 +223,7 @@ a.logo{
 .post-comment-count{
 	position: relative;
 	float:right;
-	background: $brand_color;
+	background: #CCC;
 	padding:0 10px;
 	line-height:1.6em;
 	font-size:0.8em;
@@ -232,7 +232,7 @@ a.logo{
 		position: absolute;
 		right:4px;
 		bottom:-12px;
-		border:6px solid $brand-color;
+		border:6px solid #CCC;
 		border-bottom-color: transparent;
 		border-left-color: transparent;
 	}
