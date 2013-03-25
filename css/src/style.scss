@@ -220,6 +220,21 @@ a.logo{
 	color:#777;
 }	
 
+.post-comment-count{
+	position: relative;
+	float:right;
+	background: $brand_color;
+	padding:0 12px;
+	&:after{
+		position: absolute;
+		right:4px;
+		bottom:-12px;
+		border:6px solid $brand-color;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+	}
+}
+
 .img-centered{
 	display:block;
 	margin:auto;
