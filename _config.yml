@@ -6,7 +6,7 @@ permalink: /:year/:month/:title
 paginate: 10
 prose: 
     metadata:
-        "_posts": |
+        "_posts/": |
 	        layout: "post"
 	        date: "YYYY-MM-DD"
 			slug: "title-of-your-post"
