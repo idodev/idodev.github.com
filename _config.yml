@@ -6,9 +6,4 @@ permalink: /:year/:month/:title
 paginate: 10
 prose: 
     metadata:
-        "_posts/": |
-	        layout: "post"
-	        date: "YYYY-MM-DD"
-			slug: "title-of-your-post"
-			title: "Title of your post"
-			author: "Toby Foord"
+	    layout: "post"
