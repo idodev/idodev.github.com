@@ -6,5 +6,7 @@ permalink: /:year/:month/:title
 paginate: 10
 prose:
   metadata:
-    title:    "Title of your article"
-    abstract: "Abstract"
+    "_posts": |
+      author: "Toby Foord"
+      title: "Title of your article"
+      slug: "title-of-your-article"
