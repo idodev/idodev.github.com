@@ -1,10 +1,10 @@
 ---
 layout: post
+published: true
+author: Toby Foord
 date: 2013-02-03
 slug: the-tech-behind
 title: The Tech Behind
-author: Toby Foord
-published: true
 ---
 
 ##Lights, Camera…

@@ -1,3 +1,12 @@
+---
+layout: post
+published: true
+author: Toby Foord
+date: 2013-02-11
+slug: samknows-isp-hunters
+title: SamKnows ISP Hunters
+---
+
 I just recieved an email confirming my enrolement to the SamKnows Broadband Performance Measurement Study! I think I applied for this over a year ago but still. Woop!
 
 ##Did YouKnow

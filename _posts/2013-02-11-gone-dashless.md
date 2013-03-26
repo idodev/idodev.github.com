@@ -1,10 +1,10 @@
 ---
 layout: post
+published: true
+author: Toby Foord
 date: 2013-02-11
 slug: gone-dashless
 title: Gone Dashless
-author: Toby Foord
-published: true
 ---
 
 OSX has been plagued by the ridiculous dashboard widgety nonsense since long before I joined the team, but until recently It left me alone and so too I it. 
