@@ -4,6 +4,7 @@ date: 2013-01-27 18:58:00
 slug: a-tinymce-revelation
 title: A TinyMCE revelation
 author: Toby Foord
+published: true
 ---
 
 So it all began
