@@ -1,5 +1,6 @@
 ---
 layout: post
+published:true
 date: 2013-02-11
 slug: gone-dashless
 title: Gone Dashless
