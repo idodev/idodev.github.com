@@ -14,8 +14,16 @@ Firstly, I've shifted across the idodev.co.uk domain to github pages. A super ea
 Going back on what I've said previously I did feel a little at a loss with my writing workflow. Initially I have been using iA Writer to write the articles, and have held a local copy of the git repository on dropbox so as I can write from both my mac and my iPhone (amazing how many things come to mnd when on the move!). The big gripe is when I come to publish. At this point I still needed a machine with access to my dropbox (not a a massive challenge) and more akwardly to have Git installed (a real *pita*) to push up my changes.
 
 
-I admit the first thing that came to mind was "Aha! A project!", some sketches and doodles later it seemed my use case was just too obscure, a service to push a git repo hosted on dropbox to github! By chance I spotted reference to [prose.io][prose] on an [article][scribu] by **Silviu-Cristian Burcă**
+I admit the first thing that came to mind was "Aha! A project!", some sketches and doodles later it seemed my use case was just too obscure, a service to push a git repo hosted on dropbox to github! Yesterday, by chance, I spotted reference to [prose.io][prose] on an [article][scribu] by **Silviu-Cristian Burcă** when searching for a graphical interface tailored to [Jekyll Server][jekyll].
+
+##Prose - 'A Content Editor For Github'
+That's their one liner, they go on to expand and explain that this here is a service optimised fo use with github pages, with some really handy features that already I feel as though I couldn't do without.
+
+![Alt text](/images/screenshots/right-back-to-work-then/prose-edit.png)
+
+
 
 [githubdnshelp]: https://help.github.com/articles/setting-up-a-custom-domain-with-pages
 [prose]: http://prose.io
 [scribu]: http://scribu.net/blog/switched-to-jekyll.html
+[jekyll]: http://jekyllrb.com/
