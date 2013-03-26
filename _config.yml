@@ -4,6 +4,7 @@ markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:title
 paginate: 10
-prose: 
-    metadata:
-	    layout: "post"
+prose:
+  metadata:
+    title:    "Title of your article"
+    abstract: "Abstract"
