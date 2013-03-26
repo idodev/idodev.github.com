@@ -5,8 +5,12 @@ pygments: true
 permalink: /:year/:month/:title
 paginate: 10
 prose:
+  rooturl: "_posts"
   metadata:
     "_posts": |
-      author: "Toby Foord"
-      title: "Title of your article"
-      slug: "title-of-your-article"
+      layout: post
+      published: false
+      date: YYYY-MM-DD
+      author: Toby Foord
+      title: Title of your article
+      slug: title-of-your-article
