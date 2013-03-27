@@ -64,7 +64,15 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script>
-
+		$(function(){
+			$("pre code").each(function(){ 
+				var numbers = "";
+				for(i=1;i<=Math.ceil(parseFloat($(this).height()) / parseFloat($(this).css("line-height")));i++){
+					numbers=numbers + i + "<br/>";
+				}
+				$(this).parent("pre").append($("<div/>").addClass("pre-numbering").html(numbers));
+			});
+		});
 	</script>
 </body>
 </html>
