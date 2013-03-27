@@ -4,7 +4,7 @@ $brand_color:#00B060;
 $accent_color:#FF4500;
 $text_color:#444;
 
-$default_radius:5px;
+$default_radius:3px;
 $base_font_size:16px;
 $base_spacing:1.6;
 $half_spacing:$base_spacing/2;
@@ -64,6 +64,13 @@ h2{
 	font-weight:400;
 }
 
+h3{
+	color: $brand_color;
+	font-size: 1.2em;
+	line-height: 2.5em;
+	font-weight: 400;	
+}
+
 p{
 	padding-bottom:$base_spacing_px;
 }
@@ -77,15 +84,21 @@ a{
 	}
 }
 
-pre{
-	color:#FFF;
-	background-color:#222;
-	font-weight:300;
-	padding:$half_spacing_px $base_spacing_px;
+code{
+	padding: 2px 4px;
 	border-radius: $default_radius;
+	border: 1px solid #C3CCD0;
+	background: #FFF;
+	font-family: Menlo, monospace;
+	font-size: 0.8em;
+}
+
+pre code{
+	display:block;
 	margin-bottom: $base_spacing_px;
-	font-family: Courier;
+	padding:$half_spacing_px $base_spacing_px;
 	overflow-y: auto;
+	font-weight:300;
 }
 
 ol{
