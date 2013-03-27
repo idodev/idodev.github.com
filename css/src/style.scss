@@ -133,10 +133,25 @@ em{
 	font-style: italic;
 }
 
+blockquote{
+	margin-left: $half_spacing_px;	
+	margin-bottom: $base_spacing_px;
+	padding-left: $half_spacing_px;
+	padding-right: $base_spacing_px;
+	border-left: 3px solid #AAA;
+	color:#777;
+	p{
+		margin-bottom:0;
+	}
+}
+
+
 ::selection {
 	background-color:$brand_color;
 	color:#FFF;
 }
+
+
 
 .wrapper{
 	width:$content_width_desktop;
