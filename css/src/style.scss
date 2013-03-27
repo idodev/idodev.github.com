@@ -93,12 +93,31 @@ code{
 	font-size: 0.8em;
 }
 
-pre code{
-	display:block;
+pre {
+	position:relative;
 	margin-bottom: $base_spacing_px;
-	padding:$half_spacing_px $base_spacing_px;
-	overflow-y: auto;
-	font-weight:300;
+	z-index:10;
+	code{
+		display:block;
+		padding:$half_spacing_px $base_spacing_px;
+		overflow-y: auto;
+		font-weight:300;
+	}
+}
+
+.pre-numbering{
+	position:absolute;
+	top:1px;
+	left:1px;
+	width:20px;
+	padding:$half_spacing_px 4px $half_spacing_px 0;
+	border-right:1px solid #C3CCD0;
+	border-radius: $default_radius 0 0 $default_radius;
+	background-color:#EEE;
+	text-align:right;
+	font-family: Menlo, monospace;
+	font-size:0.8em;
+	color:#AAA;
 }
 
 ol{
