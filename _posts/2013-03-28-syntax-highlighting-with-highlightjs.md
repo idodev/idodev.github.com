@@ -3,7 +3,7 @@ layout: post
 published: true
 date: 2013-03-28
 author: Toby Foord
-title: Syntax-Highlighting-with-Highlight.js
+title: Syntax Highlighting with Highlight.js
 slug: syntax-highlighting-with-highlightjs
 ---
 
