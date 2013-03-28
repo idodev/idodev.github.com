@@ -85,7 +85,6 @@ a{
 }
 
 code{
-	padding: 2px 4px;
 	border-radius: $default_radius;
 	border: 1px solid #C3CCD0;
 	background: #FFF;
@@ -93,22 +92,36 @@ code{
 	font-size: 0.8em;
 }
 
-pre {
+p code{
+	padding: 2px 4px;
+}
+
+pre{
 	position:relative;
 	margin-bottom: $base_spacing_px;
 	z-index:10;
+	border-radius: $default_radius;
+	border: 1px solid #C3CCD0;
+	background: #FFF;
+	overflow:hidden;
 	code{
 		display:block;
+		border:none;
+		border-radius: none;
+		background:none;
 		padding:$half_spacing_px $base_spacing_px;
 		overflow-y: auto;
 		font-weight:300;
+		&.has-numbering{
+			margin-left:21px;
+		}
 	}
 }
 
 .pre-numbering{
 	position:absolute;
-	top:1px;
-	left:1px;
+	top:0;
+	left:0;
 	width:20px;
 	padding:$half_spacing_px 2px $half_spacing_px 0;
 	border-right:1px solid #C3CCD0;

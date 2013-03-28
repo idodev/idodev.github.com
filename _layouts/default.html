@@ -66,13 +66,18 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="/js/highlight.pack.js"></script>
 	<script>
+		//numbering for pre>code blocks
 		$(function(){
 			$("pre code").each(function(){ 
-				var numbers = "";
-				for(i=1;i<=Math.ceil(parseFloat($(this).height()) / parseFloat($(this).css("line-height")));i++){
-					numbers=numbers + i + "<br/>";
+				var lines = $(this).text().split('\n').length;
+				var $numbering = $('<ol/>').addClass('pre-numbering');
+				$(this)
+					.addClass('has-numbering')
+					.parent()
+					.append($numbering);
+				for(i=1;i<=lines;i++){
+					$numbering.append($('<li/>'));
 				}
-				$(this).parent("pre").append($("<div/>").addClass("pre-numbering").html(numbers));
 			});
 		});
 		hljs.tabReplace = '    ';
