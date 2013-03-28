@@ -68,15 +68,15 @@
 	<script>
 		//numbering for pre>code blocks
 		$(function(){
-			$("pre code").each(function(){ 
+			$('pre code').each(function(){ 
 				var lines = $(this).text().split('\n').length;
-				var $numbering = $('<ol/>').addClass('pre-numbering');
+				var $numbering = $('<ul/>').addClass('pre-numbering');
 				$(this)
 					.addClass('has-numbering')
 					.parent()
 					.append($numbering);
 				for(i=1;i<=lines;i++){
-					$numbering.append($('<li/>'));
+					$numbering.append($('<li/>').text(i));
 				}
 			});
 		});
