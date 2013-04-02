@@ -22,7 +22,7 @@ layout: nil
    <id>{{site.baseurl}}{{ post.id }}</id>
    <content type="html">
    		{{ post.content | split :'</p>' | first | escape}}
-        &lt;br/&gt;&lt;a href="{{site.baseurl}}{{ post.url }}"&gt;Read more&hellip;&lt;/a&gt;
+        &lt;br/&gt;&lt;a href=&quot;{{site.baseurl}}{{ post.url }}&quot;&gt;Read more...&lt;/a&gt;
    </content>
  </entry>
  {% endfor %}
