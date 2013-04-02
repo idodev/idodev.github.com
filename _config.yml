@@ -4,6 +4,7 @@ markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:title
 paginate: 10
+baseurl: http://idodev.co.uk
 prose:
   rooturl: "_posts"
   metadata:
