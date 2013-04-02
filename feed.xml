@@ -1,0 +1,29 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>idodev - Toby Foord's Personal Blog/title>
+ <link href="http://idodev.co.uk/feed.xml" rel="self"/>
+ <link href="http://idodev.co.uk/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://idodev.co.uk/</id>
+ <author>
+   <name>Toby Foord</name>
+   <email>toby@idodev.co.uk</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://idodev.co.uk{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://idodev.co.uk{{ post.id }}</id>
+   {% if post.meta %}
+    <content type="html">{{ post.meta }}</content>
+    {% endif %}
+ </entry>
+ {% endfor %}
+ 
+</feed>
