@@ -10,7 +10,7 @@ layout: nil
     </url>
 {% endfor %}
 {% for page in site.pages %}
-	{{ if page.layout != nill }}
+	{{ if page.layout != nil }}
 	<url>
         <loc>{{site.baseurl}}{{page.url}}</loc>
         {%if page.lastmod %}
