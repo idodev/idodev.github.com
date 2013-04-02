@@ -20,9 +20,10 @@ layout: nil
    <link href="{{site.baseurl}}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{site.baseurl}}{{ post.id }}</id>
-   {% if post.meta %}
-    <content type="html">{{ post.meta }}</content>
-    {% endif %}
+   <content type="html">
+   		{{ post.content | split :'</p>' | first | escape}}
+        &lt;br/&gt;&lt;a href="{{site.baseurl}}{{ post.url }}"&gt;Read more&hellip;&lt;/a&gt;
+   </content>
  </entry>
  {% endfor %}
  
