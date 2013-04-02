@@ -312,3 +312,13 @@ a.logo{
 	max-width:100%;
 	margin:auto;
 }
+
+a.rss-link{
+	display:block;
+	float:right;
+	margin:-$base_spacing_px;
+	img{
+		height:$base_spacing_px;
+		width:$base_spacing_px;
+	}
+}
