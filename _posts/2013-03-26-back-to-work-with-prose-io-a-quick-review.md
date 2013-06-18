@@ -1,7 +1,5 @@
 ---
-published: 
-  - true
-  - "true"
+published: true
 layout: post
 date: "Tue Mar 26 2013 00:00:00 GMT+0000 (GMT)"
 author: Toby Foord
@@ -15,14 +13,14 @@ Firstly, I've shifted across the idodev.co.uk domain to github pages. A super ea
 
 Going back on what I've said previously I did feel a little at a loss with my writing workflow. Initially I have been using iA Writer to write the articles, and have held a local copy of the git repository on dropbox so as I can write from both my mac and my iPhone (amazing how many things come to mind when on the move!). The big gripe is when I come to publish. At this point I still needed a machine with access to my dropbox (not a a massive challenge) and more akwardly to have Git installed (a real *pita*).
 
-![Alt text](/images/screenshots/right-back-to-work-then/ia-writer.png)
+![Editing a post with iaWriter](/images/screenshots/right-back-to-work-then/ia-writer.png)
 
 I admit the first thing that came to mind was "Aha! A project!", some sketches and doodles later it seemed my use case was just too obscure, a service to push a git repo hosted on dropbox to github! Yesterday, by chance, I spotted reference to [prose.io][prose] on an [article][scribu] by **Silviu-Cristian Burcă** when searching for a graphical interface tailored to [Jekyll Server][jekyll].
 
 ##Prose - 'A Content Editor For Github'
 That's their one liner, they go on to expand and explain that this here is a service optimised fo use with github pages, with some really handy features that already I feel as though I couldn't do without.
 
-![Alt text](/images/screenshots/right-back-to-work-then/prose-edit.png)
+![Editing a post with prose.io](/images/screenshots/right-back-to-work-then/prose-edit.png)
 
 ###1) Direct Github integration
 Through the use of the Github API, Prose is able to browse through all of your repositories (and those you have been given access to). So whilst it's primary purpose has been laid out for working with github pages, you can also tweak any files in the repo. This has been a lifesaver for mini edits of html & css when on the road. The integration also allows for file creation and deletion, so an article can not only be edited but born and scrapped through the Prose UI.
