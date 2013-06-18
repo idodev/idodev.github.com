@@ -1,10 +1,12 @@
 ---
+published: 
+  - true
+  - "true"
 layout: post
-published: true
-date: 2013-03-26
+date: "Tue Mar 26 2013 00:00:00 GMT+0000 (GMT)"
 author: Toby Foord
-title: Right, back to work then
-slug: right-back-to-work-then
+title: "Back to work with Prose.io - a quick review"
+slug: "back-to-work-with-prose-io-a-quick-review"
 ---
 
 A month into fatherhood and I figure it's about time to get back into the website.
