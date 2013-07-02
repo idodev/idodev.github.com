@@ -25,7 +25,7 @@ For demonstration purposes, lets say we have an `Enum` of image sizes that we ne
     Dim EnumSizeValues As Array = System.[Enum].GetValues(GetType(ImageSizeEnum))
     For Each Size As ImageSizeEnum In EnumSizeValues
     	'Do something clever with Size
-        Console.WriteLine(Size.ToString)
+        Console.WriteLine("Size: {0}", Size)
     Next
 
 
