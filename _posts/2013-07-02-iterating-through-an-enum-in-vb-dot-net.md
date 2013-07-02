@@ -1,6 +1,6 @@
 ---
 published: 
-  - false
+  - true
   - "false"
 layout: post
 date: "2013-07-02"
