@@ -20,6 +20,26 @@ page-class: page-home
         {% endfor %}
     </ul>
 </section>
+<ol class="pagination-links">
+    <li>
+        {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+                <a href="/">Previous</a>
+            {% else %}
+                <a href="/page{{paginator.previous_page}}">Previous</a>
+            {% endif %}
+        {% else %}
+            Previous
+        {% endif %}
+    </li>
+    <li>
+        {% if paginator.next_page %}
+            <a href="/page{{paginator.next_page}}">Next</a>
+        {% else %}
+            Next
+        {% endif %}
+    </li>
+</ol>
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 var disqus_shortname = 'idodev'; // required: replace example with your forum shortname
