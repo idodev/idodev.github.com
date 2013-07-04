@@ -3,7 +3,7 @@ server: true
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:title
-paginate: 10
+paginate: 5
 baseurl: http://idodev.co.uk
 prose:
   metadata:
