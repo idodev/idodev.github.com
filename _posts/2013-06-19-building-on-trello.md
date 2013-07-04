@@ -1,8 +1,8 @@
 ---
-layout: post
 published: 
   - false
-  - "false"
+  - "true"
+layout: post
 date: "2013-06-19"
 author: Toby Foord
 title: "Building on Trello - The client.js API"
