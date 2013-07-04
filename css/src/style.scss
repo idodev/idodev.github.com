@@ -322,3 +322,14 @@ a.rss-link{
 		width:$base_spacing_px;
 	}
 }
+
+.pagination-links{
+	list-style: none;
+	padding:$half_spacing_px 0;
+	text-align: center;
+	color:#AAA;
+	li{
+		display:inline;
+		padding:0 $half_spacing_px;
+	}
+}
