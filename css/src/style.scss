@@ -307,6 +307,14 @@ a.logo{
 	margin:auto;
 }
 
+.post h1{
+	line-height:1em;
+	margin:0 0 -$base_spacing_px $base_spacing_px;
+	padding: $half_spacing_px 0 $half_spacing_px $base_spacing_px;
+	background: $brand_color;
+	color: #FFF;
+}
+
 .post img{
 	display:block;
 	max-width:100%;

@@ -9,6 +9,7 @@ page-class: page-home
         {% for post in paginator.posts %}
         <li>
             <span class="post-time">{{ post.date | date: "%d %B, %Y" }}</span>
+            <span class="post-time"><time datetime="{{ post.date }}">{{ post.date | date: "%d %B, %Y" }}</time></span>
             <span class="post-comment-count"><a href="{{ post.url }}/#disqus_thread">...</a></span>
             <h2 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <p>
@@ -24,19 +25,19 @@ page-class: page-home
     <li>
         {% if paginator.previous_page %}
             {% if paginator.previous_page == 1 %}
-                <a href="/">Previous</a>
+                <a href="/">&laquo; Previous</a>
             {% else %}
-                <a href="/page{{paginator.previous_page}}">Previous</a>
+                <a href="/page{{paginator.previous_page}}">&laquo;  Previous</a>
             {% endif %}
         {% else %}
-            Previous
+            &laquo;  Previous
         {% endif %}
     </li>
     <li>
         {% if paginator.next_page %}
-            <a href="/page{{paginator.next_page}}">Next</a>
+            <a href="/page{{paginator.next_page}}">Next &raquo;</a>
         {% else %}
-            Next
+            Next &raquo;
         {% endif %}
     </li>
 </ol>
