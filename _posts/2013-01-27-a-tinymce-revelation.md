@@ -1,13 +1,12 @@
 ---
+published: 
+  - true
+  - "true"
 layout: post
-published: true
+date: "2013-01-27 12:45:00"
 author: Toby Foord
-date: 2013-01-27 18:58:00
-slug: a-tinymce-revelation
 title: A TinyMCE revelation
----
-
-So it all began
+slug: "a-tinymce-revelation"
 ---
 
 In the last three/four years I have needed to use a rich text editor library for my web projects on multiple occasions. Roll on TinyMCE. I believe this has to be one of the maturest and widely used javascript editors, and in both their documentation and the community is quite impressive.
