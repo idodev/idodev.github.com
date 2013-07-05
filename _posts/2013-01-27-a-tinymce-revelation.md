@@ -17,7 +17,7 @@ The uses I have had for this tool are wide and varied, from providing an interfa
 
 The Revelation
 ---
-I have already commended the excelent documentation available with this library of tools, but the problem really is just how much documentation there is. I could hunt for the solution to this problem for days before unearthing a fix. There are just so many plugins and extentions of the platform that it makes my head spin.
+I have already commended the excellent documentation available with this library of tools, but the problem really is just how much documentation there is. I could hunt for the solution to this problem for days before unearthing a fix. There are just so many plugins and extentions of the platform that it makes my head spin.
 Yesterday I stumbled over three lines of code, well three options for a TinyMCE instance, and my heart nigh on skipped a beat.
 
 
