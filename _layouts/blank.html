@@ -2,6 +2,7 @@
 <html lang="en" class="{{page.page-class}}">
 <head>
 	<meta charset="UTF-8">
+	<meta name="robots" content="noindex">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0">
 
 	<title>{{ page.title }} &ndash; idodev.co.uk &ndash; Dev blog of Toby Foord</title>
@@ -12,15 +13,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css' />
 
 	<meta name="apple-mobile-web-app-title" content="idodev">
-    {% if page.title %}
-		<meta name="title" content="{{ page.title }} - idodev.co.uk">
-	{% endif %}
-	{% if page.excerpt %}
-		<meta name="description" content="{{ page.excerpt | strip_html | truncatewords:30 }}">
-	{% else %}
-		<meta name="description" content="Articles on web development, programming, scripting, design, UX and UI.">
-	{% endif %}
-
+	
     <script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-35645208-1']);
@@ -54,16 +47,9 @@
 		</div>
 	</header>
 	<div class="wrapper page-content">
-		<a href="http://feeds.feedburner.com/idodev" title="Subscribe to the idodev rss feed" class="rss-link">
-			<img src="/rss.png" alt="idodev rss feed"/>
-		</a>
 		<div class="column-wrapper">
-			<div class="column six-tenths">
+			<div class="column eight-tenths push-one-tenth">
 			{{ content }}
-			</div>
-			<div class="column three-tenths push-one-tenth sink-one-line">
-				<img src="/me.png" alt="Toby Foord - Web Developer" class="img-centered" style="height:8em"/>
-				<p>Hi, I'm  <a href="https://plus.google.com/107880253893128549134?rel=author">Toby Foord</a>. A <a href="http://github.com/idodev">developer</a>, a wannabe <a href="http://www.foorddesign.co.uk">designer</a>, a husband, and a dad. I ocassionally <a href="http://github.com/idodev">commit</a>, once in a while I <a href="http://twitter.com/tobyfoord">tweet</a>, and on a blue moon I might <a href="skype://tobyfoord?call">chat</a>.</p>
 			</div>
 		</div>
 	</div>

@@ -341,3 +341,24 @@ a.rss-link{
 		padding:0 $half_spacing_px;
 	}
 }
+
+.page-error{
+	.page-content{
+		text-align:center;
+		h1{
+			margin:3em 1em 1em;
+			line-height:3em;
+			font-size:3em;
+			font-weight:bold;
+			color:#999;
+			border-bottom:1px solid #AAA;
+		}
+		h2{
+			color:#b06000;
+		}
+	}
+}
+.redirect-countdown{
+	font-weight: 600;
+	color:$brand_color;
+}
