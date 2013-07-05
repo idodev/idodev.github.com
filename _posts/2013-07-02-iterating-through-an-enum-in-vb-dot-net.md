@@ -1,5 +1,6 @@
 ---
-published: "true"
+published: 
+  - "true"
 layout: post
 date: "2013-07-02"
 author: Toby Foord
