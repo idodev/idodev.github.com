@@ -14,6 +14,7 @@ Starting out I entered the field at [Tecker Ltd][tecker], an engineering firm, h
 Within a few short months I had been tasked with the migration and extension of a fairly archaic classic ASP intranet. A fantastic, self managed role, wherein I would be provided the most scant, brief, fag-packet ideas and be left to realisation, development, testing, implementation and training. I trully was the jack of all trades!
 
 I am now with [Classic Cottages][classic] primarily working in Visual Basic and Asp.NET on projects across multiple websites and internal systems. This position has provided me access to a mature development team with a fantastic pool of knowledge and some fantastic projects. 
+
 Most recently I have completed the development of [The Classic Guide][classicguide] which uses extensive JavaScript and jQuery, integrating with the Google Maps API and using HTML5 `local.storage` to provide an immersive search of almost 3000 attractions in the South West. The challenges of browser compatibility are never so clear as to when you want to push the boundaries of web development, here I have encountered and overcome issues with CSS rendering, HTML5 element recognition and varying levels of JavaScript capability and speed.
 
 ##Family
