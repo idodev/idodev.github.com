@@ -13,7 +13,7 @@ I recon that I spend as much time tweaking Trello as I do actually using it to m
 
 'Card view' allows you to get an overview of everything assigned to you and you can order your cards by board or due date.
 
-![Card view](/images/screenshots/trello-card-view-hacks/card-view.png)
+![Card view](http://blog.trello.com/wp-content/uploads/2012/07/Screen-Shot-2012-07-12-at-1.35.59-PM.png)
 
 I want, ney - need, to see what I'm up to on a daily basis. Card view fits the bill BUT it also shows a long history of everything I've put in the done list and have yet to archive. Not that I'm bragging, but my done list is long and as such swamps the urgent items requiring my attention. This brings me to the following snippets.
 
