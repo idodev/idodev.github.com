@@ -9,7 +9,7 @@ title: "Trello - Card View Hacks"
 slug: "trello-card-view-hacks"
 ---
 
-I recon that I spend as much time tweaking [Trello][trello] as I do actually using it to manage my workflow. I hope this shows a desire for perfection as opposed to some symptom of attention deficit disorder!
+I recon that I spend as much time tweaking [Trello](http:trello.com) as I do actually using it to manage my workflow. I hope this shows a desire for perfection as opposed to some symptom of attention deficit disorder!
 
 'Card view' allows you to get an overview of everything assigned to you and you can order your cards by board or due date.
 
@@ -37,5 +37,3 @@ These links only work on the Card view as far as I'm aware and are likely to hav
 I take no responsibility for the code provided, it really can't do any damage as far as I can tell but I've said that before and been corrected!
 
 If you do use any of this, let me know how you got on!
-
-[trello]! http://trello.com
