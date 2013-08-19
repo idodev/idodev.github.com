@@ -31,3 +31,7 @@ Here's the link: "[Trello|Hide Done](javascript:function hidetrellodonelist(\){$
 Here's the link: "[Trello|Filter](javascript:function filtertrellolists(\){var listName=prompt("Filter for list name:"\).toLowerCase(\);$(".list-card-container"\).show(\).each(function(\){if($(".list-card-position strong",this\).text(\).toLowerCase(\).indexOf(listName\) == -1\) $(this\).hide(\);}\);} filtertrellolists(\);)"
 
 	javascript:function filtertrellolists(){var listName=prompt("Filter for list name:").toLowerCase();$(".list-card-container").show().each(function(){if($(".list-card-position strong",this).text().toLowerCase().indexOf(listName) == -1) $(this).hide();});} filtertrellolists();
+
+These links only work on the Card view as far as I'm aware and are likely to have quite odd behaviour elsewhere on trello. They'll likely only every be of any use to me but at least by putting it here I can't loose them! If you do use them let me know below!
+
+I take no responsibility for the code provided, it really can't do any damage as far as I can tell but I've said that before and been corrected!
