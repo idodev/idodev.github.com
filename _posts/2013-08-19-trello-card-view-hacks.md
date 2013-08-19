@@ -1,7 +1,7 @@
 ---
 published: 
   - true
-  - "false"
+  - "true"
 layout: post
 date: "2013-08-19"
 author: Toby Foord
@@ -22,7 +22,7 @@ I've created several chrome plugins / apps relating to Trello, but in this insta
 If you want to use the following bookmarks, in Chrome or Firefox you can drag and drop the links to your bookmarks bar, in Internet Explorer right click and 'Add to Favourites'.
 
 ##Hide Done List
-Here's the <a href="javascript:function hidetrellodonelist(){$('.list-card-container').show().each(function(){if($('.list-card-position strong',this).text().toLowerCase() == 'done') $(this).hide();}); hidetrellodonelist();">link</a>
+Here's the link: [Trello - Hide Done](javascript:function hidetrellodonelist(\){$('.list-card-container'\).show(\).each(function(\){if($('.list-card-position strong',this\).text(\).toLowerCase(\) == 'done'\) $(this\).hide(\);}\);} hidetrellodonelist(\);)
 
-	$(".list-card-container").show().each(function(){if($(".list-card-position strong",this).text().toLowerCase() == "done") $(this).hide();});
+	javascript:function hidetrellodonelist(){$('.list-card-container').show().each(function(){if($('.list-card-position strong',this).text().toLowerCase() == 'done') $(this).hide();});} hidetrellodonelist();)
     
