@@ -7,17 +7,3 @@ paginate: 5
 baseurl: http://idodev.co.uk
 prose:
   siteurl: "http://idodev.co.uk"
-  metadata:
-    _posts:
-      - name: "title"
-      	field:
-      	  element: "text"
-      	  value: "Title of your article"
-      - name: "author"
-      	field:
-      	  element: "text"
-      	  value: "Toby Foord"
-      - name: "layout"
-      	field:
-      	  element: "hidden"
-      	  value: "post"
