@@ -1,12 +1,11 @@
 ---
-published: 
-  - true
-  - "true"
+published: true
 layout: post
 date: "2013-08-19"
 author: Toby Foord
 title: "Trello - Card View Hacks"
 slug: "trello-card-view-hacks"
+metadesc: null
 ---
 
 I recon that I spend as much time tweaking [Trello](http:trello.com) as I do actually using it to manage my workflow. I hope this shows a desire for perfection as opposed to some symptom of attention deficit disorder!
