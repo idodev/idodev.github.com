@@ -8,7 +8,7 @@ baseurl: http://idodev.co.uk
 prose:
   siteurl: "http://idodev.co.uk"
   metadata:
-    "_posts": |
+    _posts:
       - name: "title"
       	field:
       	  element: "text"
