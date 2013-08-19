@@ -1,13 +1,17 @@
 ---
 layout: post
-published: true
+published: 
+  - true
+  - "true"
 author: Toby Foord
-date: 2013-02-03
-slug: the-tech-behind
+date: 
+  - 2013-02-03T00:00:00.000Z
+  - "Sun Feb 03 2013 00:00:00 GMT+0000 (GMT)"
+slug: "the-tech-behind"
 title: The Tech Behind
 ---
 
-##Lights, Camera…
+Lights, Camera…
 This is take three, I've been at this point twice before. The decision to start up a blog is far too easy, the effort to maintain however is far harder. I love the idea of blogging, the public ponderings and musings entices me, and who's to say I don't have great ideas worth hearing, for me the reason to blog is quite simple, and twofold:
 
 1. To give something back, I am a massive advocate of open source. I use countless tools daily that have been selflessly handed over to the world, tools that have either no commercial alternative or that do have but at great expense. I integrate open source code into my projects often and attribution seems massively insufficient. Hopefully here I can throw tiny morsels back in to the community to try to compensate for what I have taken.
