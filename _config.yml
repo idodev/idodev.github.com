@@ -15,4 +15,20 @@ prose:
       - name: "layout"
         field:
           element: "text"
+          label: "Layout"
           value: "post"
+      - name: "metatitle"
+        field:
+          element: "text"
+          label: "Meta Title"
+          value: ""
+      - name: "metadesc"
+        field:
+          element: "textarea"
+          label: "Meta Description"
+          value: ""
+      - name: "img"
+        field:
+          element: "text"
+          label: "Headline Image"
+          value: ""
