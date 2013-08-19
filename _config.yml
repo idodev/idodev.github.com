@@ -7,3 +7,16 @@ paginate: 5
 baseurl: http://idodev.co.uk
 prose:
   siteurl: "http://idodev.co.uk"
+
+prose:
+  siteurl: 'http://idodev.co.uk'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          value: "Article Title"
