@@ -6,11 +6,18 @@ permalink: /:year/:month/:title
 paginate: 5
 baseurl: http://idodev.co.uk
 prose:
+  siteurl: "http://idodev.co.uk"
   metadata:
     "_posts": |
-      layout: post
-      published: false
-      date: YYYY-MM-DD
-      author: Toby Foord
-      title: Title of your article
-      slug: title-of-your-article
+      - name: "title"
+      	field:
+      	  element: "text"
+      	  value: "Title of your article"
+      - name: "author"
+      	field:
+      	  element: "text"
+      	  value: "Toby Foord"
+      - name: "layout"
+      	field:
+      	  element: "hidden"
+      	  value: "post"
