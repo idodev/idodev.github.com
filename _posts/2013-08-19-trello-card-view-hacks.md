@@ -22,7 +22,12 @@ I've created several chrome plugins / apps relating to Trello, but in this insta
 If you want to use the following bookmarks, in Chrome or Firefox you can drag and drop the links to your bookmarks bar, in Internet Explorer right click and 'Add to Favourites'.
 
 ##Hide Done List
-Here's the link: [Trello - Hide Done](javascript:function hidetrellodonelist(\){$('.list-card-container'\).show(\).each(function(\){if($('.list-card-position strong',this\).text(\).toLowerCase(\) == 'done'\) $(this\).hide(\);}\);} hidetrellodonelist(\);)
+Here's the link: "[Trello|Hide Done](javascript:function hidetrellodonelist(\){$('.list-card-container'\).show(\).each(function(\){if($('.list-card-position strong',this\).text(\).toLowerCase(\) == 'done'\) $(this\).hide(\);}\);} hidetrellodonelist(\);)"
 
-	javascript:function hidetrellodonelist(){$('.list-card-container').show().each(function(){if($('.list-card-position strong',this).text().toLowerCase() == 'done') $(this).hide();});} hidetrellodonelist();)
-    
+	javascript:function hidetrellodonelist(){$('.list-card-container').show().each(function(){if($('.list-card-position strong',this).text().toLowerCase() == 'done') $(this).hide();});} hidetrellodonelist();
+
+
+##Filter For List
+Here's the link: "[Trello|Filter](javascript:function filtertrellolists(\){var listName=prompt("Filter for list name:"\).toLowerCase(\);$(".list-card-container"\).show(\).each(function(\){if($(".list-card-position strong",this\).text(\).toLowerCase(\).indexOf(listName\) == -1\) $(this\).hide(\);}\);} filtertrellolists(\);)"
+
+	javascript:function filtertrellolists(){var listName=prompt("Filter for list name:").toLowerCase();$(".list-card-container").show().each(function(){if($(".list-card-position strong",this).text().toLowerCase().indexOf(listName) == -1) $(this).hide();});} filtertrellolists();
