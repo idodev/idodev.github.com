@@ -1,5 +1,5 @@
-$back_color:#F5F5F5;
-$foot_color:#222;
+$back_color:#FFFFFF;
+$foot_color:#FFFFFF;
 $brand_color:#00B060;
 $accent_color:#FF4500;
 $text_color:#444;
@@ -44,7 +44,7 @@ header.page-header{
 	min-height:400px;
 }
 footer.page-footer{
-	color:#FFF;
+	
 	padding:$half_spacing_px 0;
 	margin-top:$half_spacing_px;
 	font-size:0.8em;
@@ -87,7 +87,7 @@ a{
 code{
 	border-radius: $default_radius;
 	border: 1px solid #C3CCD0;
-	background: #FFF;
+	background: #FCFCFC;
 	font-family: Menlo, monospace;
 	font-size: 0.8em;
 }
@@ -102,7 +102,7 @@ pre{
 	z-index:10;
 	border-radius: $default_radius;
 	border: 1px solid #C3CCD0;
-	background: #FFF;
+	background: #FCFCFC;
 	overflow:hidden;
 	code{
 		display:block;
@@ -208,7 +208,7 @@ blockquote{
 
 
 footer a{
-	color:#FFF;
+	
 	text-decoration: underline;
 	font-weight:300;
 }
@@ -232,11 +232,6 @@ a.logo{
 		display:block;
 		float:left;
 		padding-right:$base_spacing_px;
-		border-bottom:2px solid #555;
-		margin-bottom:-2px;
-		&:hover{
-			border-bottom-color: $brand_color;
-		}
 		a{
 			line-height:2*$base_spacing_px;
 			color:#555;
@@ -261,6 +256,7 @@ a.logo{
 		h2{
 			font-size:2em;
 			line-height:1em;
+			padding:0.5em 0;
 			a{
 				font-weight:300;
 				&:hover{
@@ -309,8 +305,8 @@ a.logo{
 
 .post h1{
 	line-height:1em;
-	margin:0 0 -$base_spacing_px $base_spacing_px;
-	padding: $half_spacing_px 0 $half_spacing_px $base_spacing_px;
+	margin:0 0 -$base_spacing_px 1em;
+	padding: 0.5em 0 0.5em $base_spacing_px;
 	background: $brand_color;
 	color: #FFF;
 }

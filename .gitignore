@@ -1,4 +1,6 @@
 .sass-cache
 _site
 server
+build
+serve
 mixture.json

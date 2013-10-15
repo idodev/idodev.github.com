@@ -4,8 +4,8 @@ title: About me
 page-class: page-about
 permalink: /about/
 ---
-#About Me
-Hi! I'm Toby Foord, an IT developer based in Truro, Cornwall.  I have been gainfully employed in the world of web development, intranet systems and consumer facing web applications for 5 years. 
+
+Hi! I'm Toby Foord, an IT developer based in Truro, Cornwall.  I have been gainfully employed in the world of web development, intranet systems and consumer facing web applications for 5 years.
 
 ##Web Development
 
