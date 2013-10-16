@@ -5,6 +5,8 @@ author: Toby Foord
 metadesc: null
 metatitle: "Google Analytics (Not Provided) - The End is Nigh, so what's next?"
 title: "Google Analytics (Not Provided) - The End is Nigh"
+img: "http://trello-attachments.s3.amazonaws.com/521f52a02562937702003295/525e7c7210c690f43b0002af/046127398ae825a9f9cc2ae0dc149016/upload_2013-10-16_at_12.45.58_pm.png"
+imgalt: Graph showing the incredible climb of not provided in Google Analytics
 ---
 
 At last look, the 19th of November spells the end of an analytical era. Google Analytics is flying at break neck speed towards the end of keyword visibility and the rise of the ever so annoying '(Not Provided)' count.
