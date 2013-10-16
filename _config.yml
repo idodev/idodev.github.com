@@ -37,3 +37,8 @@ prose:
           element: "text"
           label: "Headline Image"
           value: ""
+      - name: "imgalt"
+        field:
+          element: "text"
+          label: "Headline Image Alt Text"
+          value: ""
