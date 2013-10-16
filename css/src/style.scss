@@ -224,7 +224,11 @@ footer a{
 
 /*Site Logo*/
 a.logo{
-	float:left;
+	position:relative;
+	display:block;
+	width:225px;
+	margin:0 auto;
+	top:30px;
 	h1{
 		img{
 			display:block;
@@ -234,16 +238,17 @@ a.logo{
 		}
 	}
 }
-
 div.site-search{
 	position: relative;
 	float:right;
 	margin:0.75em 0px ;
 	background:#F5F5F5;
 	padding:0 6px;
+	width:100%;
+	top:-86px;
 	input{
 		height:2.5em;
-		width:200px;
+		width:100%;
 		font-size:1em;
 		padding:0;
 		background: none;
@@ -257,7 +262,7 @@ div.site-search{
 		position:absolute;
 		top:100%;
 		right:0;
-		width:350px;
+		left:0;
 		background:#F8F8F8;
 		max-height:300px;
 		z-index:10;
@@ -286,11 +291,29 @@ div.site-search{
 		}
 	}
 }
+@media screen and (min-width: $content_width_mobile) {
+	a.logo{
+		float:left;
+		top:auto;
+	}
+	div.site-search{
+		float:right;
+		width:200px;
+		top:auto;
+		.results{
+			left:auto;
+			width:350px;
+		}
+	}
+	nav.site-nav{
+		float:right;
+	}
+}
 
 nav.site-nav{
+	width:120px;
 	overflow:hidden;
-	float:right;
-	margin-top:1em;
+	margin:1em auto 0;
 	ul{
 		display:block;
 		li{
