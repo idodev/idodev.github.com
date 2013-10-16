@@ -13,5 +13,5 @@ div,header,footer,.wrapper,.column-wrapper,.column{overflow:hidden;box-sizing:bo
 	overflow: hidden;
 	text-indent: -999em;
 }
-.pager a.prev{background-position: -5px center;}
-.pager a.next{background-position: -55px center;}
+.pager a.prev{left:0;background-position: -5px center;}
+.pager a.next{right:0;background-position: -55px center;}
