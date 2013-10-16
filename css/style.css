@@ -15,6 +15,6 @@ div,header,footer,.wrapper,.column-wrapper,.column{overflow:hidden;box-sizing:bo
 	text-indent: -999em;
 	opacity:0.3;
 }
-.pager a:hover{opacity:1};
+.pager a:hover{opacity:1}
 .pager a.prev{left:0;background-position: -10px center;}
 .pager a.next{right:0;background-position: -55px center;}
