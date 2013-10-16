@@ -36,19 +36,24 @@
 	<header class="page-header">
 		<div class="wrapper">
 			<div class="column-wrapper">
-				<div class="column four-tenths">
+				<div class="column ten-tenths">
 					<a href="http://idodev.github.com" class="logo">
 						<h1>
 							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="I Do Dev - Toby Foord's Personal Blog" />
 						</h1>
 					</a>
-				</div>
-				<div class="column six-tenths">
-					<ul class="site-nav">
-						<li><a href="/" class="site-nav-home">Home</a></li>
-						<li><a href="/about" class="site-nav-about">About</a></li>
-						<!--<li><a href="#" class="site-nav-projects">Projects</a></li>-->
-					</ul>
+					<div class="site-search">
+						<input type="search" placeholder="search..."/>
+						<div class="results">
+						</div>
+					</div>
+					<nav class="site-nav">
+						<ul>
+							<li><a href="/" class="site-nav-home">Home</a></li>
+							<li><a href="/about" class="site-nav-about">About</a></li>
+							<!--<li><a href="#" class="site-nav-projects">Projects</a></li>-->
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -99,6 +104,81 @@
 		});
 		hljs.tabReplace = '    ';
   		hljs.initHighlightingOnLoad();
+	</script>
+
+	<script>
+		$(function(){
+			var allPosts = null;
+			var ajaxRequest=null;
+			getPosts();
+
+			$(".site-search input").bind('keyup click',function(){
+				
+				if($(this).val().length<2){
+					$(".site-search .results").fadeOut(300);
+					return false;
+				}
+
+				var posts = filterPosts($(this).val());
+				console.log(posts.length);
+				if(posts.length>0){
+					$postsList = $("<ul>");
+
+					$.each(posts,function(k,post){
+						$postsList.append(
+							$('<li>').append(
+								$('<a>')
+									.attr('href',post.href)
+									.text(post.title)
+								)
+						);
+					});
+					
+					$('.site-search .results').empty().append($postsList);
+				}
+				else{
+					$('.site-search .results').empty().append($('<span>').text('No results...'));	
+				}
+				if(!$('.site-search .results').is(":visible")){
+					$('.site-search .results').slideToggle(300);
+				}
+			});
+
+			$(".site-search input").blur(function(){
+				setTimeout(function(){
+					if(!$(".site-search .results").is(":focus")){
+						$(".site-search .results").fadeOut(300);
+					}
+
+				},800);
+			});
+
+			function filterPosts(term){
+				var filteredPosts = [];
+				if(allPosts!=null){
+					$.each(allPosts,function(k,post){
+						if(post.title.toLowerCase().indexOf(term.toLowerCase())!=-1){
+							filteredPosts.push(post);
+						}
+					});
+				}
+				return filteredPosts;
+			}
+
+			function getPosts(){
+				if(ajaxRequest == null){
+					ajaxRequest = $.ajax({
+						url:'/search.json',
+						type:'get',
+						dataType:'json',
+						success:function(data){
+							allPosts = data;
+							allPosts.pop();
+						}
+					});
+				}
+			}
+		});
 	</script>
 
 
