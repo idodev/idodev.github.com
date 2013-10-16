@@ -6,12 +6,15 @@ div,header,footer,.wrapper,.column-wrapper,.column{overflow:hidden;box-sizing:bo
 	position: fixed;
 	top: 50%;
 	height: 60px;
-	width: 40px;
+	width: 35px;
+	margin-top:-30px;
 	background-color: #00b060;
 	background-image: url(/img/arrows.png);
 	background-repeat: no-repeat;
 	overflow: hidden;
 	text-indent: -999em;
+	opacity:0.3;
 }
-.pager a.prev{left:0;background-position: -5px center;}
+.pager a:hover{opacity:1};
+.pager a.prev{left:0;background-position: -10px center;}
 .pager a.next{right:0;background-position: -55px center;}
