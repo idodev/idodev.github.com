@@ -1,10 +1,15 @@
 ---
 layout: default
-page-class: page-post
+"page-class": "page-post"
+published: true
 ---
+
 <article class="post">
     <span class="post-time"><time datetime="{{ page.date }}">{{ page.date | date: "%d %B, %Y" }}</time></span>
-    <h1>{{ page.title }}</h1>
+  {% if page.img %}
+  <img class="post-headline-image" src="{{page.img}}" alt="{{page.imgalt}}"  />
+  {% endif %}
+  <h1>{{ page.title }}</h1>
     
     {{ content }}
 
