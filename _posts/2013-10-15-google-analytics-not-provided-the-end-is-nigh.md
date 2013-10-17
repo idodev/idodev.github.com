@@ -2,9 +2,11 @@
 published: true
 layout: post
 author: Toby Foord
-metadesc: null
-metatitle: "Google Analytics (Not Provided) - The End is Nigh, so what's next?"
 title: "Google Analytics (Not Provided) - The End is Nigh"
+slug: "google-analytics-not-provided-the-end-is-nigh"
+date: 2013-10-15
+metatitle: "Google Analytics (Not Provided) - The End is Nigh, so what's next?"
+metadesc: null
 img: "http://trello-attachments.s3.amazonaws.com/521f52a02562937702003295/525e7c7210c690f43b0002af/046127398ae825a9f9cc2ae0dc149016/upload_2013-10-16_at_12.45.58_pm.png"
 imgalt: Graph showing the incredible climb of not provided in Google Analytics
 ---

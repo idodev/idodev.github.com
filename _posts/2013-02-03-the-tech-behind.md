@@ -1,14 +1,10 @@
 ---
 layout: post
-published: 
-  - true
-  - "true"
+published: true
 author: Toby Foord
-date: 
-  - 2013-02-03T00:00:00.000Z
-  - "Sun Feb 03 2013 00:00:00 GMT+0000 (GMT)"
+title: "The Tech Behind"
 slug: "the-tech-behind"
-title: The Tech Behind
+date: 2013-02-03
 ---
 
 Lights, Camera…

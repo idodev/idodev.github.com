@@ -1,11 +1,11 @@
 ---
-published: 
-  - "true"
+published: true
 layout: post
 date: "2013-07-02"
 author: Toby Foord
 title: Iterating through an Enum in VB.NET
 slug: "iterating-through-an-enum-in-vb-dot-net"
+date: 2013-07-02
 ---
 
 Just a quick one, while I remember. How to loop (for each) through all values in an enum in VB.NET

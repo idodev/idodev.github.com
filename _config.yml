@@ -22,16 +22,31 @@ prose:
           element: "text"
           label: "Author"
           value: "Toby Foord"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: " "
+      - name: "slug"
+        field:
+          element: "text"
+          label: "Slug"
+          value: "-"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          value: "YYYY-MM-DD"
       - name: "metatitle"
         field:
           element: "text"
           label: "Meta Title"
-          value: ""
+          value: null
       - name: "metadesc"
         field:
           element: "textarea"
           label: "Meta Description"
-          value: ""
+          value: null
       - name: "img"
         field:
           element: "text"

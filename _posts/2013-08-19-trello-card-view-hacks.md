@@ -1,10 +1,10 @@
 ---
 published: true
 layout: post
-date: "2013-08-19"
 author: Toby Foord
 title: "Trello - Card View Hacks"
 slug: "trello-card-view-hacks"
+date: 2013-08-19
 metadesc: null
 ---
 
