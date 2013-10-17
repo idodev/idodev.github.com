@@ -44,7 +44,7 @@ prose:
           value: null
       - name: "metadesc"
         field:
-          element: "textarea"
+          element: "text"
           label: "Meta Description"
           value: null
       - name: "img"
