@@ -12,10 +12,14 @@
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css' />
 
 	<meta name="apple-mobile-web-app-title" content="idodev">
-    {% if page.title %}
+    {% if page.metatitle %}
+        <meta name="title" content="{{ page.metatitle }} - idodev.co.uk">
+  	{% elsif page.title %}
 		<meta name="title" content="{{ page.title }} - idodev.co.uk">
 	{% endif %}
-	{% if page.excerpt %}
+	{% if page.metadesc %}
+        <meta name="description" content="{{ page.metadesc }}">
+  	{% elsif page.excerpt %}
 		<meta name="description" content="{{ page.excerpt | strip_html | truncatewords:30 }}">
 	{% else %}
 		<meta name="description" content="Articles on web development, programming, scripting, design, UX and UI.">
