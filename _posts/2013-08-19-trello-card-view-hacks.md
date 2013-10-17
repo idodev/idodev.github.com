@@ -4,8 +4,11 @@ layout: post
 author: Toby Foord
 title: "Trello - Card View Hacks"
 slug: "trello-card-view-hacks"
-date: 2013-08-19
-metadesc: null
+date: "2013-08-19"
+metadesc: Filter your card view on Trello to hide the Done List
+img: "http://trello-attachments.s3.amazonaws.com/521f52a02562937702003295/525fab8dc16d5f0c40000ef6/2632a730f5a6f9d138cd5fdc1ed5f14e/upload_2013-10-17_at_10.19.09_am.png"
+imgalt: Code for the javascript bookmarklet to hide and show cards depending on what list they belong to.
+metatitle: "Trello - Card View Hacks"
 ---
 
 I recon that I spend as much time tweaking [Trello](http:trello.com) as I do actually using it to manage my workflow. I hope this shows a desire for perfection as opposed to some symptom of attention deficit disorder!
