@@ -2,9 +2,12 @@
 layout: post
 published: true
 author: Toby Foord
-date: 2013-02-11
-slug: samknows-isp-hunters
+date: {}
+slug: "samknows-isp-hunters"
 title: SamKnows ISP Hunters
+metadesc: null
+img: "https://trello-attachments.s3.amazonaws.com/521f52a02562937702003295/525f959effc4aba4280036e0/52511bcde38ccdf87f609e83c83679d6/upload_2013-10-17_at_8.45.35_am.png"
+imgalt: The report card emailed by SamKnows showing the connection speed of my Internet Service Provider in the last month
 ---
 
 I just recieved an email confirming my enrolement to the SamKnows Broadband Performance Measurement Study! I think I applied for this over a year ago but still. Woop!
