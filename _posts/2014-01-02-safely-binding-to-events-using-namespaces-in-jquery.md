@@ -47,8 +47,8 @@ Followed at a later point by:
     $(window).off('resize.myNamespace');
     
     
-This will leave all other non or otherwaise namespaced handlers intact.
+This will leave all other non or otherwise namespaced handlers intact.
 
-FYI. You can also stack namespaces `resize.nifty.trick`, they are built much like classes in that thay lack any heirarchy and as such can be addressed and removed individually with `.off('resize.nifty')` or `off('resize.trick')`.
+FYI. You can also stack namespaces `resize.nifty.trick`, they are built much like classes in that thay lack any heirarchy and as such can be addressed and removed individually with `.off('resize.nifty')` or `.off('resize.trick')`.
 
 I hope this saves someone a few hours of head scratching, I've now a awfully raw bald patch that I fear may never recover!
