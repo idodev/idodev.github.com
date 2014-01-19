@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Tracking Disqus comments in Google Analytics
 layout: post
 author: Toby Foord
