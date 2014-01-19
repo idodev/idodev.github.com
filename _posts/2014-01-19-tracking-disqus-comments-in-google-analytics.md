@@ -16,10 +16,12 @@ Another quick memo/tip. Next time your implementing Disqus comments in your site
  		}];
 	}
     
-Add the above into your Disqus config and adapt the Google event descriptions as you wish. Note the above is using Google Universal Analytics. Ff you wanted to do this using previous tracking code using `_gaq` the following would be appropriate.
+Add the above into your Disqus config and adapt the Google event descriptions as you wish. Note the above is using Google Universal Analytics. If you wanted to do this using previous tracking code using `_gaq` the following would be appropriate.
 
 	function disqus_config() {
 		this.callbacks.onNewComment = [function() {
       		_gaq.push(['_trackEvent', 'Posts', 'Comment']);
  		}];
 	}
+    
+Source: [Disqus Help Docs](http://help.disqus.com/customer/portal/articles/466258-capturing-disqus-commenting-activity-via-callbacks)
