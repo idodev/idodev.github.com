@@ -19,7 +19,7 @@ published: true
         var disqus_shortname = 'idodev'; // required: replace example with your forum shortname
 		function disqus_config() {
           this.callbacks.onNewComment = [function() {
-            _gaq.push(['_trackEvent', 'Posts', 'New Comment']);
+            ga('send', 'event', 'Posts', 'New Comment']);
           }];
       	}
         
