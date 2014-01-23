@@ -11,7 +11,7 @@
 
 */
 
-/*global window, setTimeout, hljs, $ */
+/*global window, setTimeout, hljs, $, ga */
 
 
 $(function () {
@@ -104,4 +104,11 @@ $(function () {
             }
         }, 800);
     });
+
+    //track user clicking search result
+    if (typeof (ga) === "function") {
+        $('.site-search .results li a').on('click', function () {
+            ga('send', 'event', 'Search', 'Clicked Result', $(this).attr('href'));
+        });
+    }
 });
