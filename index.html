@@ -1,0 +1,53 @@
+---
+layout: default
+title: Home
+page-class: page-home
+---
+
+<section class="posts">
+    <ul class="block-list">
+        {% for post in paginator.posts %}
+        <li>
+            <span class="post-time"><time datetime="{{ post.date }}">{{ post.date | date: "%d %B, %Y" }}</time></span>
+            <span class="post-comment-count"><a href="{{ post.url }}/#disqus_thread">...</a></span>
+            <h2 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>
+            	{{ post.excerpt }}
+            	<br />
+            	<a href="{{ post.url }}">Read more&raquo;</a>
+            </p>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+<ol class="pagination-links">
+    <li>
+        {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+                <a href="/">&laquo; Previous</a>
+            {% else %}
+                <a href="/page{{paginator.previous_page}}">&laquo;  Previous</a>
+            {% endif %}
+        {% else %}
+            &laquo;  Previous
+        {% endif %}
+    </li>
+    <li>
+        {% if paginator.next_page %}
+            <a href="/page{{paginator.next_page}}">Next &raquo;</a>
+        {% else %}
+            Next &raquo;
+        {% endif %}
+    </li>
+</ol>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'idodev'; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>

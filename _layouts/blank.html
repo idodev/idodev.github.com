@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" class="{{page.page-class}}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+	<title>{{ page.title }} &ndash; idodev.co.uk &ndash; Dev blog of Toby Foord</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/reset.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/highlight.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css' />
+
+	<meta name="apple-mobile-web-app-title" content="idodev">
+	
+    <script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-35645208-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+<body>
+	<header class="page-header">
+		<div class="wrapper">
+			<div class="column-wrapper">
+				<div class="column four-tenths">
+					<a href="http://idodev.github.com" class="logo">
+						<h1>
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="I Do Dev - Toby Foords Personal Blog" />
+						</h1>
+					</a>
+				</div>
+				<div class="column six-tenths">
+					<ul class="site-nav">
+						<li><a href="/" class="site-nav-home">Home</a></li>
+						<li><a href="/about" class="site-nav-about">About</a></li>
+						<!--<li><a href="#" class="site-nav-projects">Projects</a></li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper page-content">
+		<div class="column-wrapper">
+			<div class="column eight-tenths push-one-tenth">
+			{{ content }}
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="wrapper">
+			<p>&copy; 2013 Toby Foord. This site is hosted on github using <a href="https://github.com/mojombo/jekyll/">Jekyll</a>. Feel free to <a href="http://github.com/idodev/idodev.github.com">view the source here</a>.</p>
+		</div>
+	</footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/js/highlight.pack.js"></script>
+	<script>
+		//numbering for pre>code blocks
+		$(function(){
+			$('pre code').each(function(){ 
+				var lines = $(this).text().split('\n').length - 1;
+				var $numbering = $('<ul/>').addClass('pre-numbering');
+				$(this)
+					.addClass('has-numbering')
+					.parent()
+					.append($numbering);
+				for(i=1;i<=lines;i++){
+					$numbering.append($('<li/>').text(i));
+				}
+			});
+		});
+		hljs.tabReplace = '    ';
+  		hljs.initHighlightingOnLoad();
+	</script>
+
+
+</body>
+</html>
