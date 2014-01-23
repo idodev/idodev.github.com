@@ -12,12 +12,10 @@ page-class: page-error
     $(function(){
         var secondsUntilRedirect = 8;
         $(".redirect-countdown").text(secondsUntilRedirect);
-        var setInterval(function(){
-            secondsUntilRedirect = secondsUntilRedirect - 1;
+        setInterval (function () {
+            secondsUntilRedirect -= 1;
             $(".redirect-countdown").text(secondsUntilRedirect);
-            if(secondsUntilRedirect == 0){
-                window.location.href = "http://idodev.co.uk";
-            }
+            if (secondsUntilRedirect == 0) window.location.href = "http://idodev.co.uk";
         },1000);
-    })
+    });
 </script>
