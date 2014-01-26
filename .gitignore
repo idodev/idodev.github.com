@@ -4,3 +4,4 @@ server
 build
 serve
 mixture.json
+/node_modules/

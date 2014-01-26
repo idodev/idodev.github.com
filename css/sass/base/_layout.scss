@@ -9,7 +9,7 @@ $base_font_size:16px;
 $base_spacing:1.6;
 $half_spacing:$base_spacing/2;
 $base_spacing_px:$base_spacing * $base_font_size;
-$half_spacing_px: $half_spacing * $base_font_size; 
+$half_spacing_px: $half_spacing * $base_font_size;
 
 /*content widths*/
 $content_width_desktop:1100px;
@@ -44,7 +44,7 @@ header.page-header{
 	min-height:400px;
 }
 footer.page-footer{
-	
+
 	padding:$half_spacing_px 0;
 	margin-top:$half_spacing_px;
 	font-size:0.8em;
@@ -68,7 +68,7 @@ h3{
 	color: $brand_color;
 	font-size: 1.2em;
 	line-height: 2.5em;
-	font-weight: 400;	
+	font-weight: 400;
 }
 
 p{
@@ -148,7 +148,7 @@ em{
 }
 
 blockquote{
-	margin-left: $half_spacing_px;	
+	margin-left: $half_spacing_px;
 	margin-bottom: $base_spacing_px;
 	padding-left: $half_spacing_px;
 	padding-right: $base_spacing_px;
@@ -218,7 +218,7 @@ blockquote{
 
 
 footer a{
-	
+
 	text-decoration: underline;
 	font-weight:300;
 }
@@ -364,7 +364,7 @@ nav.site-nav{
 .post-time{
 	font-size:1em;
 	color:#777;
-}	
+}
 
 .post-comment-count{
 	position: relative;
@@ -472,6 +472,7 @@ a.rss-link{
 	text-indent: -999em;
 	opacity:0.3;
 }
+
 .pager a:hover{opacity:1}
 .pager a.prev{left:0;background-position: -10px center;}
 .pager a.next{right:0;background-position: -55px center;}
