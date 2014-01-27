@@ -3,6 +3,7 @@ pygments: true
 permalink: /:year/:month/:title
 paginate: 5
 baseurl: http://idodev.co.uk
+cachebuster: 1
 prose:
   siteurl: 'http://idodev.co.uk'
   metadata:

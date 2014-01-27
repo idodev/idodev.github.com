@@ -1,6 +1,5 @@
 /*global window, setTimeout, hljs, $, ga */
 
-
 $(function () {
     "use strict";
 

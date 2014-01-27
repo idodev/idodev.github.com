@@ -6,7 +6,7 @@
 
 	<title>{{ page.title }} &ndash; idodev.co.uk &ndash; Dev blog of Toby Foord</title>
 
-	<link rel="stylesheet" type="text/css" href="/css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.min.css?v{{ site.cachebuster }}">
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css' />
 
 	<meta name="apple-mobile-web-app-title" content="idodev">
@@ -60,7 +60,7 @@
 			<p>&copy; 2013 Toby Foord. This site is hosted on github using <a href="http://jekyllrb.com/">Jekyll</a>. Feel free to <a href="http://github.com/idodev/idodev.github.com">view the source here</a>.</p>
 		</div>
 	</footer>
-	<script src="/js/highlight.pack.js"></script>
-	<script src="/js/app.min.js?v1"></script>
+	<script src="/js/vendor.min.js?v{{ site.cachebuster }}"></script>
+	<script src="/js/app.min.js?v{{ site.cachebuster }}"></script>
 </body>
 </html>
