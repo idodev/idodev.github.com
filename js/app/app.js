@@ -97,4 +97,65 @@ $(function () {
             ga('send', 'event', 'Search', 'Clicked Result', $(this).attr('href'));
         });
     }
+
+
+
+    // HOME word toggle
+    if ($('.tid-type').length === 1) {
+        $('.tid-type').loopText({
+            strings: Array('design', 'dream', 'develop', 'discover','change','improve'),
+            fadeDuration: 800,
+            pauseDuration: 4000,
+        });
+    }
+    if ($('.tid-platform').length === 1) {
+        $('.tid-platform').loopText({
+            strings: Array('web', 'desktop', 'mobile', 'business', 'users'),
+            fadeDuration: 800,
+            pauseDuration: 5000,
+        });
+    }
+
 });
+
+
+(function($){
+
+    $.fn.loopText = function(options){
+        $(this).each(function () {
+            var self = this;
+            var strIndex = 0;
+
+            var settings = {
+                strings: Array('goodbye', 'cruel', 'world'),
+                fadeDuration: 1000,
+                pauseDuration: 3000,
+            }
+            var opts = $.extend({},settings,options);
+
+            var recurseTextChange = function () {
+                $(self).animate({opacity:0},opts.fadeDuration/2,
+                    function() {
+                        if( strIndex+1 == opts.strings.length){
+                            strIndex = 0;
+                        } else {
+                            ++strIndex;
+                        }
+                        $(self)
+                            .text(opts.strings[strIndex])
+                            .animate({opacity:1},opts.fadeDuration/2, function(){
+                                setTimeout(function(){
+                                    recurseTextChange()
+                                },opts.pauseDuration);
+                            });
+                    }
+                );
+            };
+
+            recurseTextChange();
+        });
+        return this;
+    }
+
+})(jQuery);
+

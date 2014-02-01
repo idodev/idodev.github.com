@@ -19,6 +19,7 @@ $content_width_mobile:480px;
 div, header, footer, .wrapper, .column-wrapper, .column{
 	//overflow:hidden;
 	box-sizing:border-box;
+    position:relative;
 }
 
 html{
