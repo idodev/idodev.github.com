@@ -6,6 +6,7 @@ author: Toby Foord
 title: Iterating through an Enum in VB.NET
 slug: "iterating-through-an-enum-in-vb-dot-net"
 date: 2013-07-02
+categories: blog vb dotnet
 ---
 
 Just a quick one, while I remember. How to loop (for each) through all values in an enum in VB.NET

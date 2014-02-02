@@ -7,6 +7,7 @@ slug: "safely-binding-to-events-using-namespaces-in-jQuery"
 date: "2014-01-02"
 metatitle: How to safely bind to an event in jQuery using namespaces
 metadesc: A quick javascript tip for making sure that your bindings to events in jQuery will not conflict by using namespaces
+categories: blog javascript jquery
 ---
 
 This was a bit of a eurika moment for me a couple of weeks ago. For those who just want an answer jump to the bottom. I'm feeling a little playful so please, indulge me and read on!

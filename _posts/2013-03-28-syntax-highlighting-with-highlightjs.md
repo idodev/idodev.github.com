@@ -5,6 +5,7 @@ author: Toby Foord
 title: Syntax Highlighting with Highlight.js
 slug: syntax-highlighting-with-highlightjs
 date: 2013-03-28
+categories: blog javascript
 ---
 
 As I've said before this blog started as a **minimum viable product** and because of this I was up and running in a matter of hours. This method does slow you down after the initial push though. The latest example being the want to provide code snippets with syntax highlighting.

@@ -36,7 +36,7 @@ body{
 }
 header.page-header{
 	background-color: #FFF;
-	padding:$base_spacing_px 0;
+	padding:1em 0;
 }
 
 .page-content{
@@ -56,6 +56,7 @@ h1{
 	font-size:2em;
 	line-height:2em;
 	vertical-align: text-top;
+    margin-top:8px;
 }
 
 h2{
@@ -313,7 +314,7 @@ div.site-search{
 }
 
 nav.site-nav{
-	width:125px;
+	width:225px;
 	overflow:hidden;
 	margin:1em auto 0;
 	ul{
@@ -335,7 +336,7 @@ nav.site-nav{
 }
 .page-home .site-nav li a.site-nav-home,
 .page-about .site-nav li a.site-nav-about,
-.page-projects .site-nav li a.site-nav-projects
+.page-experiments .site-nav li a.site-nav-experiments
 {color:$brand_color;}
 
 .block-list{
@@ -362,6 +363,38 @@ nav.site-nav{
 		}
 	}
 }
+
+ul li.experiment{
+    padding:0.5em;
+    a{
+        text-decoration:none;
+    }
+    h2{
+        font-size:1.5em;
+        line-height:2em;
+        margin:0;
+        display:inline;
+        position:relative;
+        background:$brand_color;
+        color:#FFF;
+        text-align:center;
+        padding:0.5em 1em;
+    }
+
+    transition: margin-left .25s ease-in-out;
+    -moz-transition: margin-left .25s ease-in-out;
+    -webkit-transition: margin-left .25s ease-in-out;
+    &:hover{
+        margin-left:1em;
+    }
+
+    span.experiment-tag{
+        float: right;
+        line-height: 3em;
+        font-style: italic;
+    }
+}
+
 .post-time{
 	font-size:1em;
 	color:#777;
@@ -477,3 +510,8 @@ a.rss-link{
 .pager a:hover{opacity:1}
 .pager a.prev{left:0;background-position: -10px center;}
 .pager a.next{right:0;background-position: -55px center;}
+
+
+@-moz-keyframes rotate { 100% { -moz-transform: rotate(20deg); } }
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(20deg); } }
+@keyframes rotate { 100% { -webkit-transform: rotate(20deg); transform:rotate(20deg); } }

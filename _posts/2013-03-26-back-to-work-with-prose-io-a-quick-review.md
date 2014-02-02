@@ -9,6 +9,7 @@ metadesc: null
 img: "https://trello-attachments.s3.amazonaws.com/521f52a02562937702003295/525e80089c356f225e002380/b80a6332964cd5a15fd8b465b48ef8f9/upload_2013-10-16_at_1.01.13_pm.png"
 imgalt: Editing a post within prose.io
 metatitle: "Back to work with Prose.io - a quick review"
+categories: blog review
 ---
 
 A month into fatherhood and I figure it's about time to get back into the website.

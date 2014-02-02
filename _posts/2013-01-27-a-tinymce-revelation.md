@@ -5,6 +5,7 @@ author: Toby Foord
 title: "A TinyMCE revelation"
 slug: "a-tinymce-revelation"
 date: 2013-01-27
+categories: blog javascript
 ---
 
 In the last three/four years I have needed to use a rich text editor library for my web projects on multiple occasions. Roll on TinyMCE. I believe this has to be one of the maturest and widely used javascript editors, and in both their documentation and the community is quite impressive.

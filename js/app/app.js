@@ -103,7 +103,7 @@ $(function () {
     // HOME word toggle
     if ($('.tid-type').length === 1) {
         $('.tid-type').loopText({
-            strings: Array('design', 'dream', 'develop', 'discover','change','improve'),
+            strings: Array('design', 'dream', 'develop', 'discover','change'),
             fadeDuration: 800,
             pauseDuration: 4000,
         });

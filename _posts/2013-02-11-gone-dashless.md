@@ -5,6 +5,7 @@ author: Toby Foord
 title: "Gone Dashless"
 slug: "gone-dashless"
 date: 2013-02-11
+categories: blog apple
 ---
 
 OSX has been plagued by the ridiculous dashboard widgety nonsense since long before I joined the team, but until recently It left me alone and so too I it. 

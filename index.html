@@ -7,16 +7,23 @@ page-class: page-home
 <section class="posts">
     <ul class="block-list">
         {% for post in paginator.posts %}
-        <li>
-            <span class="post-time"><time datetime="{{ post.date }}">{{ post.date | date: "%d %B, %Y" }}</time></span>
-            <span class="post-comment-count"><a href="{{ post.url }}/#disqus_thread">...</a></span>
-            <h2 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <p>
-            	{{ post.excerpt }}
-            	<br />
-            	<a href="{{ post.url }}">Read more&raquo;</a>
-            </p>
-        </li>
+            {% if post.categories contains 'blog' %}
+            <li>
+                <span class="post-time"><time datetime="{{ post.date }}">{{ post.date | date: "%d %B, %Y" }}</time></span>
+                <span class="post-comment-count"><a href="{{ post.url }}/#disqus_thread">...</a></span>
+                <h2 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <p>
+                    {{ post.excerpt }}
+                    <br />
+                    <a href="{{ post.url }}">Read more&raquo;</a>
+                </p>
+            </li>
+            {% else %}
+            <li class="experiment">
+                <span class="experiment-tag">*New Experiment</span>
+                <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+            </li>
+            {% endif %}
         {% endfor %}
     </ul>
 </section>

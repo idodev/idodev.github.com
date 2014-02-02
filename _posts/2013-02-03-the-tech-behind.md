@@ -5,6 +5,7 @@ author: Toby Foord
 title: "The Tech Behind"
 slug: "the-tech-behind"
 date: 2013-02-03
+categories: blog
 ---
 
 Lights, Camera…

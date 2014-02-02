@@ -1,0 +1,18 @@
+---
+layout: blank
+title: Home
+page-class: page-experiments
+---
+
+<section class="experiments">
+    <ul class="grid-list">
+        {% for post in site.categories['experiments'] %}
+            <li class="experiment">
+                <a href="{{ post.url }}">
+                    <h2 class="post_title">{{ post.title }}</h2>
+                </a>
+            </li>
+
+        {% endfor %}
+    </ul>
+</section>
