@@ -34,7 +34,7 @@ I like line numbers, maybe it is just eye candy but I can see the day where I'll
 
     //numbering for pre>code blocks
     $(function(){
-        $('pre code').each(function(){ 
+        $('pre code').each(function(){
             var lines = $(this).text().split('\n').length - 1;
             var $numbering = $('<ul/>').addClass('pre-numbering');
             $(this)
@@ -57,7 +57,7 @@ It's simple really, it starts by hunting down the code blocks `$('pre code')`. T
         background: #FFF;
         overflow: hidden;
     }
-    
+
     code {
       display: block;
       padding: 12px 24px;
@@ -70,7 +70,7 @@ It's simple really, it starts by hunting down the code blocks `$('pre code')`. T
     code.has-numbering {
         margin-left: 21px;
     }
-    
+
     .pre-numbering {
         position: absolute;
         top: 0;

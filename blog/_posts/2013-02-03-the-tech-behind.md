@@ -17,7 +17,7 @@ This is take three, I've been at this point twice before. The decision to start 
 I've tried Wordpress. Been there, done that. The problem I have with WP is it's scale. Lil' old me decides to start blogging and suddenly I'm handed this gargantuan platform to manage. All I want to do is plonk down some words, proof and post. I have no need nor want for countless themes, plugins and updates.
 
 ##Enter Github
-Recently whilst poking around my repo's on github I noticed references to [Github Pages][github-pages]. At first glance, it appeared to be another stale prebuilt, lookalikey offering. On further reading, you can manage the design and content entirely yourself as the platform is based on just a few key technologies that provide all the flexibility you (or at least I) can need 
+Recently whilst poking around my repo's on github I noticed references to [Github Pages][github-pages]. At first glance, it appeared to be another stale prebuilt, lookalikey offering. On further reading, you can manage the design and content entirely yourself as the platform is based on just a few key technologies that provide all the flexibility you (or at least I) can need
 
 ##Jekyll
 Github's co founder [Tom Preston-Werner][tpw] created the blogging platform used on Github Pages called Jekyll. (If curious the source is openly available here). Jekyll uses markdown, textile and liquid converters combined with a layout directory and discrete post documents to generate a completely static website. It sounds extremely basic and in many ways it is, however it is still very much a complete system.

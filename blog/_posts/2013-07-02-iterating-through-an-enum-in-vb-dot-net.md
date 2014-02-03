@@ -20,7 +20,7 @@ For demonstration purposes, lets say we have an `Enum` of image sizes that we ne
         Medium = 2
 		Large = 3
     Enum
-	
+
 ###Iterating the Enum
     Dim EnumSizeValues As Array = System.[Enum].GetValues(GetType(ImageSizeEnum))
     For Each Size As ImageSizeEnum In EnumSizeValues

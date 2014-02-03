@@ -19,19 +19,19 @@ Now to finish this little wonder off, the modal viewer is , in css parlance, 'ab
     $(window).on('resize',function(){
         //do some whizbang awesome stuff
     });
-    
+
 
     $(window).on('keydown',function(e){
     	//using e.keyCode we can control the gallery prev next play and close
     });
-    
+
 Done.
 
 But, being the conscientious coder that I am, when the gallery is closed I want to clear up my code so, lets unbind these listeners.
 
     $(window).off('resize');
     $(window).off('keydown');
-    
+
 Arghhh, but now my other epic plugin isn't responding to keypresses, I've just removed the `keydown` listener from any and **all** `window.keydown` handlers that were previously implemented.
 
 Namespace your events
@@ -42,12 +42,12 @@ Maybe I missed lesson one in jQuery but after much cussing it seems those clever
     $(window).on('resize.myNamespace',function(){
         //do some whizbang awesome stuff
     });
-    
+
 Followed at a later point by:
 
     $(window).off('resize.myNamespace');
-    
-    
+
+
 This will leave all other non or otherwise namespaced handlers intact.
 
 FYI. You can also stack namespaces `resize.nifty.trick`, they are built much like classes in that thay lack any heirarchy and as such can be addressed and removed individually with `.off('resize.nifty')` or `.off('resize.trick')`.
