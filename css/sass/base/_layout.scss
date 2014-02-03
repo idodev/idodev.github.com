@@ -370,6 +370,7 @@ nav.site-nav{
             margin-top: 0.5em;
 
             img{
+                display:block
                 width: 200px;
                 padding: 2px;
                 border: 3px solid #EEE;
@@ -384,7 +385,7 @@ nav.site-nav{
             }
             @media screen and (max-width: $content_width_mobile) {
                 img{
-                    width:100%;
+                    width:300px;
                     max-width:100%;
                 }
             }
