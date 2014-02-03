@@ -46,5 +46,5 @@ $.fn.pixel8 = function(options){
 };
 
 $(function(){
-    $('#sandbox').pixel8({cellSize:20,threads:10,speed:100});
+    $('#sandbox').pixel8({cellSize:40,threads:10,speed:100});
 });
