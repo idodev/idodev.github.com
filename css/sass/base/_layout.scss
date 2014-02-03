@@ -378,6 +378,9 @@ nav.site-nav{
             @media screen and (max-width: 600px) {
                 margin: 0.5em auto;
                 float: none;
+                img{
+                    margin:auto;
+                }
             }
             @media screen and (max-width: $content_width_mobile) {
                 img{
