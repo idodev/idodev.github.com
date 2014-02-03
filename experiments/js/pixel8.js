@@ -4,28 +4,26 @@ $.fn.pixel8 = function(options){
         var self = this;
 
         var settings = {
-            widthDivisions: 10,
+            cellSize: 10,
             threads: 4,
             speed: 200,
-        }
+        };
         var opts = $.extend({},settings,options);
 
-        var cellSize = Math.ceil($(self).width()/ opts.widthDivisions);
-        console.log($(self).outerHeight());
-        var cols = opts.widthDivisions, rows = Math.ceil($(self).height()/cellSize);
+        var cols = Math.ceil($(self).width(),opts.cellSize), rows = Math.ceil($(self).height()/opts.cellSize);
 
         for(r=0;r<rows;r++){
             for(c=0;c<cols;c++){
                 $(self).append(
                     $('<div/>')
                     .addClass('cell_'+r+'_'+c)
-                    .width(cellSize)
-                    .height(cellSize)
+                    .width(opts.cellSize)
+                    .height(opts.cellSize)
                     .css('background','#000')
                     .css('opacity',Math.random()*0.9)
                     .css('position','absolute')
-                    .css('left',c*cellSize)
-                    .css('top',r*cellSize)
+                    .css('left',c*opts.cellSize)
+                    .css('top',r*opts.cellSize)
                 );
             }
         }
@@ -35,7 +33,7 @@ $.fn.pixel8 = function(options){
                 var col = Math.round(Math.random()*cols);
                 var row = Math.round(Math.random()*rows);
                 $('.cell_'+row+'_'+col,self).animate({'opacity':Math.random()*0.9},opts.speed);
-            },opts.speed);
+            }, opts.speed);
 
         }
 
@@ -45,5 +43,5 @@ $.fn.pixel8 = function(options){
 };
 
 $(function(){
-    $('#sandbox').pixel8({widthDivisions:40,threads:20,speed:100});
+    $('#sandbox').pixel8({cellSize:20,threads:10,speed:200});
 });
