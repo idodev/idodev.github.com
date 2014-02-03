@@ -7,6 +7,7 @@ $.fn.pixel8 = function(options){
             cellSize: 10,
             threads: 4,
             speed: 200,
+            sets:5
         };
         var opts = $.extend({},settings,options);
 
@@ -30,9 +31,11 @@ $.fn.pixel8 = function(options){
         var threads = [];
         for(t=0;t<opts.threads;t++){
             threads[t] = setInterval(function(){
-                var col = Math.round(Math.random()*cols);
-                var row = Math.round(Math.random()*rows);
-                $('.cell_'+row+'_'+col,self).animate({'opacity':Math.random()*0.9},opts.speed);
+                for(s=0;s<opts.sets;s++){
+                    var col = Math.round(Math.random()*cols);
+                    var row = Math.round(Math.random()*rows);
+                    $('.cell_'+row+'_'+col,self).animate({'opacity':Math.random()*0.9},opts.speed);
+                }
             }, opts.speed);
 
         }
