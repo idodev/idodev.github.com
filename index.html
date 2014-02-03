@@ -10,8 +10,8 @@ page-class: page-home
             <li>
                 <span class="post-time"><time datetime="{{ post.date }}">{{ post.date | date: "%d %B, %Y" }}</time></span>
                 <span class="post-comment-count"><a href="{{ post.url }}/#disqus_thread">...</a></span>
-                {% if post.thumb %}
-                    <img src"{{post.thumb}}" alt="{{post.imgalt}}" />
+                {% if page.thumb %}
+                    <img class="thumb" src="{{page.thumb}}" alt="{{page.imgalt}}"  />
                 {% endif %}
                 <h2 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <p>
