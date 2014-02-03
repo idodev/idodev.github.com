@@ -540,7 +540,26 @@ a.rss-link{
 .pager a.prev{left:0;background-position: -10px center;}
 .pager a.next{right:0;background-position: -55px center;}
 
+a.download-source{
+    display: block;
+    margin: 0em auto;
+    width: 200px;
+    text-align: center;
+    line-height: 1.4em;
+    padding: 0.5em;
+    background: #00B060;
+    color: #FFF;
+    border-bottom: 3px solid #009040;
+    border-radius: 4px;
 
-@-moz-keyframes rotate { 100% { -moz-transform: rotate(20deg); } }
-@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(20deg); } }
-@keyframes rotate { 100% { -webkit-transform: rotate(20deg); transform:rotate(20deg); } }
+    span.info{
+        display: block;
+        font-size: 0.8em;
+    }
+
+    &:hover{
+        text-decoration:none;
+        border-bottom-width:1px;
+        margin-top:2px;
+    }
+}
