@@ -3,6 +3,15 @@
 $(function () {
     "use strict";
 
+    //NAV REPOSITIONING
+    $(window).bind('scroll.iddnav', function () {
+        if($(this).scrollTop() > 0 && $(this).width() >= 800) {
+            $('.page-header').css('position', 'fixed');
+        } else {
+            $('.page-header').css('position', 'relative');
+        }
+    });
+
     // LINE NUMBERING FOR PRE/CODE
 
     hljs.tabReplace = '    ';

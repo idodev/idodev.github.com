@@ -35,8 +35,12 @@ body{
 	line-height:$base_spacing_px;
 }
 header.page-header{
-	background-color: #FFF;
-	padding:1em 0;
+	z-index:1;
+    background-color: #FFF;
+	padding:0;
+    border-bottom: 3px solid #EEE;
+    left:0;
+    right:0;
 }
 
 .page-content{
@@ -229,10 +233,10 @@ footer a{
 a.logo{
 	position:relative;
 	display:block;
-	width:225px;
+	width:71px;
 	margin:0 auto;
-	top:30px;
 	h1{
+        margin:8px 0;
 		img{
 			display:block;
 			width:71px;
@@ -242,6 +246,7 @@ a.logo{
 	}
 }
 div.site-search{
+    display:none; /*hiding search for time being - until better design is evaluated*/
 	position: relative;
 	float:right;
 	margin:0.75em 0px ;
@@ -314,7 +319,7 @@ div.site-search{
 }
 
 nav.site-nav{
-	width:225px;
+	width:230px;
 	overflow:hidden;
 	margin:1em auto 0;
 	ul{
