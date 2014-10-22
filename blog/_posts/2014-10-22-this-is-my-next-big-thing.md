@@ -1,3 +1,12 @@
+---
+published: true
+title: This is my next big thing
+layout: post
+author: Toby Foord
+metatitle: This is my next big thing
+categories: projects nodejs
+---
+
 It's all a bit hush-hush, but I'm working on something awesome. I've wanted to delve into Node.JS (and all of its related shenanigans) for a while now and think I may just have come up with an excuse.
 
 With the proliferation of '[The Internet Of Things](http://en.wikipedia.org/wiki/Internet_of_Things)' and the ever growing <del>desire</del> need for realtime performance logging and analytics be it web, mobile, desktop, or even that Arduino thats been sitting dormant for months, I have been toying with a creating an open platform for data collection, with a highly configurable wallboard output. Further still these events shouldn't be restricted to this one view, event triggers and callbacks will hopefully allow a simple tool to achieve a suprising amount.
