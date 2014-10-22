@@ -1,12 +1,12 @@
 It's all a bit hush-hush, but I'm working on something awesome. I've wanted to delve into Node.JS (and all of its related shenanigans) for a while now and think I may just have come up with an excuse.
 
-With the proliferation of '[The Internet Of Things](http://en.wikipedia.org/wiki/Internet_of_Things)' and the ever growing <del>desire</del> need for realtime performance logging and analytics be it web, mobile, desktop, or even that Arduino thats been sitting dormant for months, I have been toying with a creating an open platform for data collection\*, with a highly configurable wallboard output. Further still these events shouldn't be restricted to this one view, event triggers and callbacks will hopefully allow a simple tool to achieve a suprising amount.
+With the proliferation of '[The Internet Of Things](http://en.wikipedia.org/wiki/Internet_of_Things)' and the ever growing <del>desire</del> need for realtime performance logging and analytics be it web, mobile, desktop, or even that Arduino thats been sitting dormant for months, I have been toying with a creating an open platform for data collection, with a highly configurable wallboard output. Further still these events shouldn't be restricted to this one view, event triggers and callbacks will hopefully allow a simple tool to achieve a suprising amount.
 
 Of all things this feels like the perfect application of some really exiting new technologies that I've not yet had the chance to play with. A backend sat on [Node.JS](http://nodejs.org) partnered with [MongoDB](http://www.mongodb.org/). A front end powered by [Angular](https://angularjs.org/) (or [Knockout](http://knockoutjs.com/)+[RequireJS](http://requirejs.org/)+[CrossroadsJS](http://millermedeiros.github.io/crossroads.js/), opinions welcome) with data pushed to the browser courtesy of WebSockets using [socket.io](http://socket.io/). Simple!
 
 Lack of time, lack of sleep and lack of motivation have kept this idea off paper and out of code for quite some time but with Winter drawing in it feels like its time to get going.
 
-*\*Note: I'm not a loon, I'm well aware of the existing services out there! I've just always felt they don't do **exactly** what I want them to. Either that or I can't justify the expense. I'm not looking for this to be **the** next big thing, its a journey for me, a utility I want and hopefully a process that I'll be able to share with you.*
+*Note: I'm not a loon, I'm well aware of the existing services out there! I've just always felt they don't do **exactly** what I want them to. Either that or I can't justify the expense. I'm not looking for this to be **the** next big thing, its a journey for me, a utility I want and hopefully a process that I'll be able to share with you.*
 
 ##Where to start
 
