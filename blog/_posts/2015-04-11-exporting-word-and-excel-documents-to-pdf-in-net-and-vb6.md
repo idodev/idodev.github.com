@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "Exporting Word and Excel documents to PDF in .NET (and VB6!)"
 layout: post
 author: Toby Foord
