@@ -9,7 +9,7 @@ Obscure and probably only of interest to a very specific few, this was a friggin
 
 Working with a legacy on-prem application where Word and Excel documents are being generated, we've been using network PDF printers to try to hack-automate PDF generation and attachment to emails. The problem with this has been lack of portability in the code base (it requires additional config on every users machine) and nigh-on impossible diagnosis when it all just doesnt play nice!
 
-So, when I realised that Office can natively export to PDF, my heart skipped a beat. Office 2007 was the first to be able to do so, albeit requiring the installation of an addin. From 2010 its been hard baked into Office's core and with that has been exposed, COM visible, to happy go lucky .NET developers like me. Just a shame it's taken me 5(?!) years to spot it.
+So, when I realised that Office can natively export to PDF, my heart skipped a beat. Office 2007 was the first to be able to do so, albeit requiring the installation of an addin. From 2010 support has been hard baked into Office's core and with that has been exposed, in the COM visible assembly `Microsoft.Office.Interop.Word.dll`, to happy go lucky .NET developers like me. Just a shame it's taken me 5(?!) years to spot it.
 
 The MSDN articles provide a pretty thorough description (go figure!). Note that the methods exposed by the interop differ between Word & Excel.
 
