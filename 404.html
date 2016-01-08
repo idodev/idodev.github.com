@@ -1,0 +1,21 @@
+---
+layout: blank
+title: "404 Page Not Found"
+page-class: page-error
+---
+<h1>404: THIS IS NOT A DRILL!</h1>
+<h2>Dang, I just cant find what you were after.</h2>
+<p>This page must have been moved or deleted, or the URL you have requested was incorrect.</p>
+<p>To continue on your way use the navigation above or hang tight for <span class="redirect-countdown">n</span> seconds until you are automatically sent to the homepage.</p>
+
+<script>
+    $(function(){
+        var secondsUntilRedirect = 8;
+        $(".redirect-countdown").text(secondsUntilRedirect);
+        setInterval (function () {
+            secondsUntilRedirect -= 1;
+            $(".redirect-countdown").text(secondsUntilRedirect);
+            if (secondsUntilRedirect == 0) window.location.href = "http://idodev.co.uk";
+        },1000);
+    });
+</script>

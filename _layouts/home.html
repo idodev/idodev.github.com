@@ -1,0 +1,51 @@
+---
+layout: base
+published: true
+---
+
+
+{% unless paginator.previous_page %}
+<div class="mega-text">
+    <div class="wrapper">
+        <div class="column-wrapper">
+            <div class="column seven-tenths">
+                <h2>Hi, I'm Toby! I <span class="things-i-do tid-type">develop</span> things for <span class="things-i-do tid-platform">web</span></h2>
+            </div>
+            <div class="column three-tenths bg-me">&nbsp;</div>
+        </div>
+    </div>
+</div>
+{% endunless %}
+
+
+<div class="wrapper page-content">
+    <a href="http://feeds.feedburner.com/idodev" title="Subscribe to the idodev rss feed" class="rss-link">
+        <img src="/img/rss.png" alt="idodev rss feed"/>
+    </a>
+    <div class="column-wrapper">
+        <div class="column six-tenths">
+        {{ content }}
+        </div>
+        <div class="column three-tenths push-one-tenth sink-one-line">
+            {% if paginator.previous_page %}
+                <img src="/img/me.png" alt="Toby Foord - Web Developer" class="img-centered" style="height:8em"/>
+                <p>Hi, I'm  <a href="https://plus.google.com/107880253893128549134?rel=author">Toby Foord</a>. A 28 year old <a href="http://github.com/idodev">developer</a>, wannabe <a href="http://www.foorddesign.co.uk">designer</a>, husband, and dad. I ocassionally <a href="http://github.com/idodev">commit</a>, once in a while I <a href="http://twitter.com/tobyfoord">tweet</a>, and on a blue moon I might <a href="skype://tobyfoord?call">chat</a>.</p>
+            {% else %}
+                <p>A 28 year old <a href="http://github.com/idodev">developer</a>, wannabe <a href="http://www.foord8esign.co.uk">designer</a>, husband, and dad. I ocassionally <a href="http://github.com/idodev">commit</a>, once in a while I <a href="http://twitter.com/tobyfoord">tweet</a>, and on a blue moon I might <a href="skype://tobyfoord?call">chat</a>.</p>
+            {% endif %}
+
+            <div class='newsletter-signup'>
+                <form action="http://idodev.us7.list-manage.com/subscribe/post-json?u=6c59b52ae82ced9cb6266f7fd&amp;id=e279756034&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                    <label for="mce-EMAIL">E-mail Newsletter Signup</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
+                    <div style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_58abcfa203271a9db312e69fc_ee0af79b60" value="">
+                    </div>
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                </form>
+                <div id="notification_container">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

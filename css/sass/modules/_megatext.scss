@@ -1,0 +1,35 @@
+.mega-text{
+    position:relative;
+    background:#008276 url(/img/noise.png);
+    border-bottom:3px solid #006056;
+    padding:2em 0;
+    margin-bottom:1em;
+    h2{
+        font-size:2.2em;
+        color:#FFF;
+        line-height:1.8em;
+        padding:1.5em 0;
+        margin:0;
+        @media screen and (max-width: $content_width_tablet) {
+            text-align:center;
+        }
+    }
+
+    span.things-i-do{
+        border-radius: 4px;
+        background: rgba(255,255,255,0.2);
+        padding: 4px 12px 6px;
+    }
+
+    .bg-me{
+        min-height:160px;
+        background:url(/img/me.png) center no-repeat;
+        @media screen and (min-width: $content_width_tablet) {
+            position: absolute;
+            height: 100%;
+            right: 0;
+        }
+    }
+
+
+}

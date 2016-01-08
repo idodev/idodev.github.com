@@ -1,0 +1,46 @@
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:title
+paginate: 5
+baseurl: http://idodev.co.uk
+cachebuster: 1
+prose:
+  siteurl: "http://idodev.co.uk"
+  media: "blog/images"
+  metadata:
+    blog/_posts:
+      - name: "layout"
+        field:
+          element: "text"
+          label: "Layout"
+          value: "post"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: "Toby Foord"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: null
+      - name: "metatitle"
+        field:
+          element: "text"
+          label: "Meta Title"
+          value: null
+      - name: "metadesc"
+        field:
+          element: "text"
+          label: "Meta Description"
+          value: null
+      - name: "img"
+        field:
+          element: "text"
+          label: "Headline Image"
+          value: ""
+      - name: "imgalt"
+        field:
+          element: "text"
+          label: "Headline Image Alt Text"
+          value: null
