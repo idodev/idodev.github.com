@@ -6,9 +6,9 @@ layout: nil
  
  <title>idodev - Toby Foord's Personal Blog</title>
  <link href="{{site.baseurl}}/feed.xml" rel="self"/>
- <link href="{{site.baseurl}}/"/>
+ <link href="{{site.baseurl}}"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{site.baseurl}}/</id>
+ <id>{{site.baseurl}}</id>
  <author>
    <name>Toby Foord</name>
    <email>toby@idodev.co.uk</email>
