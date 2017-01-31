@@ -1,4 +1,5 @@
 markdown: kramdown
+highlighter: rouge
 permalink: /:year/:month/:title
 paginate: 5
 baseurl: http://idodev.co.uk
