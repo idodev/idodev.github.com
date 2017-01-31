@@ -1,8 +1,10 @@
 markdown: kramdown
 highlighter: rouge
 permalink: /:year/:month/:title
-paginate: 5
 baseurl: http://idodev.co.uk
+gems:
+  - jekyll-paginate
+paginate: 5
 cachebuster: 1
 prose:
   siteurl: "http://idodev.co.uk"
