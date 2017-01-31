@@ -14,7 +14,7 @@ Traditionally I would add a node to my xml response such as `<metrics elapsed="0
 
 With the beauty of WebAPIs simplicity in serializing objects so cleanly, the idea of muddying the models with this logic was really quite unappealing. Upon the discovery that you are able to apply filters to your response through `WebAPIConfig` it was time for a bit of digging.
 
-In the end the solution is really quite pretty. I'm a vb developer primarily so I'll make no apologies for the code samples below. For those who of the C# persuasion [Telerik's converter](converter.telerik.com/) may ease your pain.
+In the end the solution is really quite pretty. I'm a vb developer primarily so I'll make no apologies for the code samples below. For those who are of the C# persuasion [Telerik's converter](converter.telerik.com/) may ease your pain.
 
 Firstly lets create our filter. Extending `ActionFilterAttribute` we're able to create hooks before and after our code executes.
 
