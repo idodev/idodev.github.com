@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Toby Foord
-published: false
+published: true
 title: Reporting WebAPI 2 Response Times
 metatitle: Reporting WebAPI 2 Response Times
 metadesc: >-
@@ -58,10 +58,3 @@ End Sub
 * As a side note, I use the `X-` prefix to custom headers. I like it and I've used it for years (back when it was best practice), but apparently its [no longer recommended](http://stackoverflow.com/questions/3561381/custom-http-headers-naming-conventions) if it doesn't appeal, chop it out!
 
 And we're done. All of my responses now hold this little bit of unobtrusive meta data, and I can't count how many times I've used it in debugging & reporting.
-
-
-
-
-    
-
-
