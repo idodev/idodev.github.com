@@ -10,7 +10,7 @@ metadesc: >-
 ---
 Upon my first forray into WebAPI 2 I immediately longed for visiblity of just how long a request had taken to execute.
 
-Traditionally I would add a node to my xml response such as `<metrics elapsed="0.0580"/>`. This however had a significant pitfall in that its addition was applied to each response manually by wrapping the `XMLWriter` and any business logic with a calculated timespan. All in all making for messy code and increasing the code burden/technical debt for every new endpoint exposed.
+Traditionally I would add a node to my xml response such as `<metrics elapsed="0.0580"/>`. This however had a significant pitfall in that its addition was applied to each response manually by wrapping the `XMLWriter` object and any business logic with a calculated timespan. All in all making for messy code and increasing the code burden/technical debt for every new endpoint exposed.
 
 With the beauty of WebAPIs simplicity in serializing objects so cleanly, the idea of muddying the models with this logic was really quite unappealing. Upon the discovery that you are able to apply filters to your response through `WebAPIConfig` it was time for a bit of digging.
 
