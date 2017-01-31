@@ -1,7 +1,6 @@
-markdown: kramdown
-highlighter: rouge
-permalink: /:year/:month/:title
 baseurl: http://idodev.co.uk
+permalink: /:year/:month/:title
+markdown: kramdown
 gems:
   - jekyll-paginate
 paginate: 5

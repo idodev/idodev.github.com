@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 ---
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
@@ -10,13 +10,13 @@ layout: nil
     </url>
 {% endfor %}
 {% for page in site.pages %}
-	{{ if page.layout != nil }}
+	{% if page.layout %}
 	<url>
         <loc>{{site.baseurl}}{{page.url}}</loc>
         {%if page.lastmod %}
         <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
         {% endif %}
     </url>
-    {{ endif }}
+    {% endif %}
 {% endfor %}
 </urlset>
