@@ -24,13 +24,15 @@ Github's co founder [Tom Preston-Werner][tpw] created the blogging platform used
 
 Each post is stored as a markdown file within the _posts directory, the file name must be date and slug combined. Atop each post is a yaml identifier that provides  all the detail Jekyll needs to organise the blog. These 'variables' are also accessible anywhere you reference the post. Mine is super simple and looks a little like this:
 
-    ---
-    layout: post
-    date: 2013-02-03
-    slug: the-tech-behind
-    title: The Tech Behind
-    author: Toby Foord
-    ---
+```
+---
+layout: post
+date: 2013-02-03
+slug: the-tech-behind
+title: The Tech Behind
+author: Toby Foord
+---
+```
 
 I’m currently working on the minimum viable product premise but will be sure to keep you in the loop as and when I extend the site. Until then, I hope I can put at least one thing up here of use to at least one person!
 

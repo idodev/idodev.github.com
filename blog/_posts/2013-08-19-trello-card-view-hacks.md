@@ -27,13 +27,16 @@ If you want to use the following bookmarks, in Chrome or Firefox you can drag an
 ##Hide Done List
 Here's the link: "[Trello|Hide Done](javascript:function hidetrellodonelist(\){$('.list-card-container'\).show(\).each(function(\){if($('.list-card-position strong',this\).text(\).toLowerCase(\) == 'done'\) $(this\).hide(\);}\);} hidetrellodonelist(\);)"
 
-	javascript:function hidetrellodonelist(){$('.list-card-container').show().each(function(){if($('.list-card-position strong',this).text().toLowerCase() == 'done') $(this).hide();});} hidetrellodonelist();
-
+```
+javascript:function hidetrellodonelist(){$('.list-card-container').show().each(function(){if($('.list-card-position strong',this).text().toLowerCase() == 'done') $(this).hide();});} hidetrellodonelist();
+```
 
 ##Filter For List
 Here's the link: "[Trello|Filter](javascript:function filtertrellolists(\){var listName=prompt("Filter for list name:"\).toLowerCase(\);$(".list-card-container"\).show(\).each(function(\){if($(".list-card-position strong",this\).text(\).toLowerCase(\).indexOf(listName\) == -1\) $(this\).hide(\);}\);} filtertrellolists(\);)"
 
-	javascript:function filtertrellolists(){var listName=prompt("Filter for list name:").toLowerCase();$(".list-card-container").show().each(function(){if($(".list-card-position strong",this).text().toLowerCase().indexOf(listName) == -1) $(this).hide();});} filtertrellolists();
+```
+javascript:function filtertrellolists(){var listName=prompt("Filter for list name:").toLowerCase();$(".list-card-container").show().each(function(){if($(".list-card-position strong",this).text().toLowerCase().indexOf(listName) == -1) $(this).hide();});} filtertrellolists();
+```
 
 These links only work on the Card view as far as I'm aware and are likely to have quite odd behaviour elsewhere on Trello. They'll likely only every be of any use to me but at least by putting it here I can't loose them.
 

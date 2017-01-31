@@ -16,21 +16,25 @@ So here's me trying to create the next awesome photo gallery plugin in jQuery. I
 
 Now to finish this little wonder off, the modal viewer is , in css parlance, 'absolutely' positioned filling 100% width and height and I just need to javascript to let me know when the user resizes the window to regenerate the image. We also have previous, next and play  buttons that I would like to be able to control using the keyboard - surely an expected function in any decent gallery! So lets bind to some events:
 
-    $(window).on('resize',function(){
-        //do some whizbang awesome stuff
-    });
+```
+$(window).on('resize',function(){
+    //do some whizbang awesome stuff
+});
 
 
-    $(window).on('keydown',function(e){
-    	//using e.keyCode we can control the gallery prev next play and close
-    });
+$(window).on('keydown',function(e){
+    //using e.keyCode we can control the gallery prev next play and close
+});
+```
 
 Done.
 
 But, being the conscientious coder that I am, when the gallery is closed I want to clear up my code so, lets unbind these listeners.
 
-    $(window).off('resize');
-    $(window).off('keydown');
+```
+$(window).off('resize');
+$(window).off('keydown');
+```
 
 Arghhh, but now my other epic plugin isn't responding to keypresses, I've just removed the `keydown` listener from any and **all** `window.keydown` handlers that were previously implemented.
 
@@ -39,14 +43,17 @@ Namespace your events
 
 Maybe I missed lesson one in jQuery but after much cussing it seems those clever devs saw this coming! After a little google of something along the lines of 'well how the f&%k did you do it then?' I found the answer, namespace your damned events or pay for it later. jQuery makes this incredibly easy to do:
 
-    $(window).on('resize.myNamespace',function(){
-        //do some whizbang awesome stuff
-    });
+```
+$(window).on('resize.myNamespace',function(){
+    //do some whizbang awesome stuff
+});
+```
 
 Followed at a later point by:
 
-    $(window).off('resize.myNamespace');
-
+```
+$(window).off('resize.myNamespace');
+```
 
 This will leave all other non or otherwise namespaced handlers intact.
 

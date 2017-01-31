@@ -14,11 +14,14 @@ Having finally upgraded to OSX Lion the dashboard really wants to play again. It
 
 As with all the best finds, a mere one line in Terminal will rid you of these woes by removing the dashboard entirely. Not a god awful widget in sight!
 
-    defaults write com.apple.dashboard mcx-disabled -boolean YES
-
+```
+defaults write com.apple.dashboard mcx-disabled -boolean YES
+```
 
 For this to take effect immediately you may also want to run this
 
-    killall Dock
+```
+killall Dock
+```
 
 Bon-apetit.
