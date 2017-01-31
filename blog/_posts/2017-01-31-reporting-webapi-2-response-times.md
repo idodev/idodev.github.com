@@ -55,6 +55,20 @@ Public Overrides Sub OnActionExecuted(actionExecutedContext As HttpActionExecute
     actionExecutedContext.Response.Headers.Add("X-Stopwatch", stopwatch.Elapsed.ToString)
 End Sub
 ```
-* As a side note, I use the `X-` prefix to custom headers. I like it and I've used it for years (back when it was best practice), but apparently its [no longer recommended](http://stackoverflow.com/questions/3561381/custom-http-headers-naming-conventions) if it doesn't appeal, chop it out!
 
-And we're done. All of my responses now hold this little bit of unobtrusive meta data, and I can't count how many times I've used it in debugging & reporting.
+I use the `X-` prefix for custom headers. I like it and I've used it for years (back when it was best practice), but apparently its [no longer recommended](http://stackoverflow.com/questions/3561381/custom-http-headers-naming-conventions) if it doesn't appeal, chop it out!
+
+Finally all thats left is to associate the ActionFilter with our WebAPI. (I've ommited the standard route mapping and serialization configuration bolierplate code for brevity).
+
+```
+Public Module WebApiConfig
+    Public Sub Register(ByVal config As HttpConfiguration)
+        ' ...
+        GlobalConfiguration.Configuration.Filters.Add(New StopwatchHeaderFilter)
+    End Sub
+End Module
+```
+
+And we're done. All responses now hold this little bit of unobtrusive meta data, and I can't count how many times I've used it in debugging & reporting.
+
+Been of any use? Missed something? Let me know in the comments!
