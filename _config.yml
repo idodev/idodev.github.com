@@ -1,5 +1,5 @@
 baseurl: http://idodev.co.uk
-permalink: /:year/:month/:title
+permalink: /:year/:month/:title/
 markdown: kramdown
 gems:
   - jekyll-paginate
