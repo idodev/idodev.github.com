@@ -13,7 +13,7 @@ Just a quick one, while I remember. How to loop (for each) through all values in
 
 For demonstration purposes, lets say we have an `Enum` of image sizes that we need to look through.
 
-###The Enum
+### The Enum
 
 ```
 Public Enum ImageSizeEnum
@@ -24,7 +24,7 @@ Public Enum ImageSizeEnum
 Enum
 ```
 
-###Iterating the Enum
+### Iterating the Enum
 
 ```
 Dim EnumSizeValues As Array = System.[Enum].GetValues(GetType(ImageSizeEnum))
